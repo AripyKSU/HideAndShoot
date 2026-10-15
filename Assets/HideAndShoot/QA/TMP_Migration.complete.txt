@@ -1,0 +1,4 @@
+2026-10-13 15:09:12
+ConvertedText=24
+ConvertedInput=2
+Font=Assets/HideAndShoot/Resources/Fonts/DNFBitBitv2_SDF.asset

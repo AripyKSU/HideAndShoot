@@ -1,0 +1,30 @@
+FPS RIG DIAGNOSIS (EDIT-TIME PREFAB, NOT PLAY)
+FPS rig=True, visible=True
+Camera=True, mask=-2049, near=0.025
+Arms=True, local=(0.00, -1.10, 0.32), holder=(0.37, -0.24, 0.14)
+Gun=True, local=(0.05, -0.01, 0.00), rotation=(286.31, 110.12, 299.34), layer=12
+Arms Animator=True, avatarIsHuman=True, controller=AC_HumanoidShared
+LeftHand bone=Left_Wrist_Joint_01 position=(-0.164, 1.334, 0.414)
+RightUpperArm bone=Right_Upper_Arm_Joint_01 position=(0.563, 1.748, 0.430)
+RightLowerArm bone=Right_Forearm_Joint_01 position=(0.727, 1.582, 0.372)
+RightHand bone=Right_Wrist_Joint_01 position=(0.904, 1.334, 0.414)
+Renderer Robot2 enabled=True layer=12 mat=RobotKyle_LowMetallic center=(0.38, 1.58, 1.38) size=(0.34, 1.45, 1.91) localBounds=Center: (0.00, 0.90, -0.01), Extents: (0.65, 0.90, 0.17)
+SkinnedMesh FPS_RightArm_0 vertices=5701 triangles=1362 bones=48
+Renderer Pistol_ProvisionalCandidate enabled=False layer=12 mat=LowPolyPistol_MutedGrey,LowPolyPistol_MutedGrey,LowPolyPistol_MutedGrey,LowPolyPistol_MutedGrey,LowPolyPistol_MutedGrey center=(0.86, 1.26, 0.39) size=(0.02, 0.02, 0.02) localBounds=n/a
+Renderer FPS_QuaterniusPistol enabled=True layer=12 mat=LowPolyPistol_MutedGrey,LowPolyPistol_MutedGrey,LowPolyPistol_MutedGrey,LowPolyPistol_MutedGrey,LowPolyPistol_MutedGrey center=(0.94, 1.35, 0.49) size=(0.05, 0.17, 0.26) localBounds=n/a
+Renderer FPS_QuaterniusPistol enabled=True layer=12 mat=LowPolyPistol_MutedGrey,LowPolyPistol_MutedGrey,LowPolyPistol_MutedGrey,LowPolyPistol_MutedGrey,LowPolyPistol_MutedGrey center=(0.94, 1.35, 0.49) size=(0.05, 0.17, 0.26) localBounds=n/a
+CLIP Idle_ReadyPistol: mixamo.com length=4 looping=True humanMotion=True legacy=False
+CLIP Locomotion_Forward_Walk: mixamo.com length=0.8000001 looping=True humanMotion=True legacy=False
+CLIP Locomotion_Forward_Run: mixamo.com length=0.5 looping=True humanMotion=True legacy=False
+CLIP Fire_Handgun: mixamo.com length=5.3 looping=False humanMotion=True legacy=False
+CLIP Aim_Idle: mixamo.com length=1.333333 looping=True humanMotion=True legacy=False
+STATE Locomotion motion=Movement_Idle_Walk_Run
+BLEND 0: mixamo.com looping=True
+BLEND 2.2: mixamo.com looping=True
+BLEND 5: mixamo.com looping=True
+STATE Aim motion=mixamo.com
+STATE Fire motion=mixamo.com
+STATE Death motion=mixamo.com
+STATE Victory motion=mixamo.com
+STATE Grip motion=mixamo.com
+STATE Released motion=

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29704126ae4bac94dba7a6c31ed54017, type: 3}
+  m_Name: PodiumAnimationSet
+  m_EditorClassIdentifier: Assembly-CSharp::HideAndShoot.UI.PodiumAnimationSet
+  clips:
+  - {fileID: 7400000, guid: 5d9f1dcd6b90a3a468b9a3d2d4d8d856, type: 2}
+  - {fileID: 7400000, guid: df90ea5e81ff12041b73af338ca26651, type: 2}
+  - {fileID: 7400000, guid: 79748bc836c4ec64a92b788773c0aa09, type: 2}
+  - {fileID: 7400000, guid: 0a3bad976b4a16d42afdf156b15af02b, type: 2}

@@ -1,0 +1,118 @@
+Unity UI, eight-slot lobby and distinct podium animations
+PASS | Room overlay activates when a room is created
+PASS | Room overlay is hidden after leaving
+PASS | Leave room restores 'TacticalFrame' original visibility
+PASS | Leave room restores 'NicknameLabel' original visibility
+PASS | Leave room restores 'NicknameInput' original visibility
+PASS | Leave room restores 'CreateRoomButton' original visibility
+PASS | Leave room restores 'NicknameDivider' original visibility
+PASS | Leave room restores 'RoomCodeLabel' original visibility
+PASS | Leave room restores 'RoomCodeInput' original visibility
+PASS | Leave room restores 'JoinRoomButton' original visibility
+PASS | Leave room restores 'MenuStatusText' original visibility
+PASS | Leave room restores 'AccentRail' original visibility
+PASS | Leave room restores 'AccentFoot' original visibility
+PASS | Leave room restores 'ConnectionHint' original visibility
+PASS | Leave room restores 'RoomOverlay' original visibility
+PASS | Intentionally hidden menu text stays hidden after room exit
+PASS | Code-authored title and TMP font survive room exit
+PASS | Nickname TMP input restored after room exit
+PASS | Create-room button is usable again after room exit
+PASS | 20-character Korean nickname 1 accepted
+PASS | 20-character Korean nickname 2 accepted
+PASS | 20-character Korean nickname 3 accepted
+PASS | 20-character Korean nickname 4 accepted
+PASS | 20-character Korean nickname 5 accepted
+PASS | 20-character Korean nickname 6 accepted
+PASS | 20-character Korean nickname 7 accepted
+PASS | 20-character Korean nickname 8 accepted
+PASS | Eight-player host can start
+PASS | Exactly eight dedicated member rows
+PASS | (1920, 1080) row 1 preserves full nickname in one line
+PASS | (1920, 1080) row 1 fits roster viewport
+PASS | (1920, 1080) row 1 text stays on screen
+PASS | (1920, 1080) row 2 preserves full nickname in one line
+PASS | (1920, 1080) row 2 fits roster viewport
+PASS | (1920, 1080) row 2 text stays on screen
+PASS | (1920, 1080) row 3 preserves full nickname in one line
+PASS | (1920, 1080) row 3 fits roster viewport
+PASS | (1920, 1080) row 3 text stays on screen
+PASS | (1920, 1080) row 4 preserves full nickname in one line
+PASS | (1920, 1080) row 4 fits roster viewport
+PASS | (1920, 1080) row 4 text stays on screen
+PASS | (1920, 1080) row 5 preserves full nickname in one line
+PASS | (1920, 1080) row 5 fits roster viewport
+PASS | (1920, 1080) row 5 text stays on screen
+PASS | (1920, 1080) row 6 preserves full nickname in one line
+PASS | (1920, 1080) row 6 fits roster viewport
+PASS | (1920, 1080) row 6 text stays on screen
+PASS | (1920, 1080) row 7 preserves full nickname in one line
+PASS | (1920, 1080) row 7 fits roster viewport
+PASS | (1920, 1080) row 7 text stays on screen
+PASS | (1920, 1080) row 8 preserves full nickname in one line
+PASS | (1920, 1080) row 8 fits roster viewport
+PASS | (1920, 1080) row 8 text stays on screen
+PASS | (1280, 720) row 1 preserves full nickname in one line
+PASS | (1280, 720) row 1 fits roster viewport
+PASS | (1280, 720) row 1 text stays on screen
+PASS | (1280, 720) row 2 preserves full nickname in one line
+PASS | (1280, 720) row 2 fits roster viewport
+PASS | (1280, 720) row 2 text stays on screen
+PASS | (1280, 720) row 3 preserves full nickname in one line
+PASS | (1280, 720) row 3 fits roster viewport
+PASS | (1280, 720) row 3 text stays on screen
+PASS | (1280, 720) row 4 preserves full nickname in one line
+PASS | (1280, 720) row 4 fits roster viewport
+PASS | (1280, 720) row 4 text stays on screen
+PASS | (1280, 720) row 5 preserves full nickname in one line
+PASS | (1280, 720) row 5 fits roster viewport
+PASS | (1280, 720) row 5 text stays on screen
+PASS | (1280, 720) row 6 preserves full nickname in one line
+PASS | (1280, 720) row 6 fits roster viewport
+PASS | (1280, 720) row 6 text stays on screen
+PASS | (1280, 720) row 7 preserves full nickname in one line
+PASS | (1280, 720) row 7 fits roster viewport
+PASS | (1280, 720) row 7 text stays on screen
+PASS | (1280, 720) row 8 preserves full nickname in one line
+PASS | (1280, 720) row 8 fits roster viewport
+PASS | (1280, 720) row 8 text stays on screen
+PASS | (1280, 1024) row 1 preserves full nickname in one line
+PASS | (1280, 1024) row 1 fits roster viewport
+PASS | (1280, 1024) row 1 text stays on screen
+PASS | (1280, 1024) row 2 preserves full nickname in one line
+PASS | (1280, 1024) row 2 fits roster viewport
+PASS | (1280, 1024) row 2 text stays on screen
+PASS | (1280, 1024) row 3 preserves full nickname in one line
+PASS | (1280, 1024) row 3 fits roster viewport
+PASS | (1280, 1024) row 3 text stays on screen
+PASS | (1280, 1024) row 4 preserves full nickname in one line
+PASS | (1280, 1024) row 4 fits roster viewport
+PASS | (1280, 1024) row 4 text stays on screen
+PASS | (1280, 1024) row 5 preserves full nickname in one line
+PASS | (1280, 1024) row 5 fits roster viewport
+PASS | (1280, 1024) row 5 text stays on screen
+PASS | (1280, 1024) row 6 preserves full nickname in one line
+PASS | (1280, 1024) row 6 fits roster viewport
+PASS | (1280, 1024) row 6 text stays on screen
+PASS | (1280, 1024) row 7 preserves full nickname in one line
+PASS | (1280, 1024) row 7 fits roster viewport
+PASS | (1280, 1024) row 7 text stays on screen
+PASS | (1280, 1024) row 8 preserves full nickname in one line
+PASS | (1280, 1024) row 8 fits roster viewport
+PASS | (1280, 1024) row 8 text stays on screen
+PASS | Nickname markup remains literal
+PASS | Large ping stays within its separate column
+PASS | Twenty wide Latin characters fit without truncation
+PASS | Client lobby keeps host-only start hidden
+PASS | One-player lobby keeps start disabled
+PASS | HUD scoreboard fits eight maximum-length nicknames
+PASS | Styled ESC menu supports UGUI pointer input
+PASS | Podium has at least three native looping clips
+PASS | Podium clips have distinct motion curves
+PASS | First, second and third use different clips simultaneously
+Rank 1 clip=Victory_Wave_Gesture
+Rank 2 clip=Victory_Wave
+Rank 3 clip=Victory_LookAround_Body
+PASS | Celebration advances animated arm pose
+VERIFIED VISIBLE PODIUM OVERLAY
+Rendered layout/animation checks use editor previews; no online session was opened.

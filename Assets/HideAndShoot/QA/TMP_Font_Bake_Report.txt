@@ -1,0 +1,6 @@
+Font=Assets/HideAndShoot/Resources/Fonts/DNFBitBitv2_SDF.asset
+Glyphs=11426
+Atlases=2
+HangulSyllables=11172/11172
+MissingCount=513
+MissingPreview=¢£¥¦¬¯µÀÁÂÃÄÅÇÈÉÊËÌÍÎÏÑÒÓÔÕÖÙÚÛÜÝàáâãäåçèéêëìíîïñòóôõöùúûüýÿᄀᄁᄂᄃᄄᄅᄆᄇᄈᄉᄊᄋᄌᄍᄎᄏᄐᄑᄒᄓᄔᄕᄖᄗᄘᄙᄚᄛᄜᄝᄞᄟᄠᄡᄢᄣᄤᄥᄦᄧᄨᄩᄪᄫᄬᄭᄮᄯᄰᄱᄲᄳᄴᄵᄶᄷᄸᄹᄺᄻ

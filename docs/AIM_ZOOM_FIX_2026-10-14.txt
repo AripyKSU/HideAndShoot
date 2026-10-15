@@ -1,0 +1,10 @@
+Finite ADS zoom verification
+PASS | 20fps: no early readiness; exact 43-degree FOV at first frame on/after 0.15s
+PASS | 30fps: no early readiness; exact 43-degree FOV at first frame on/after 0.15s
+PASS | 60fps: no early readiness; exact 43-degree FOV at first frame on/after 0.15s
+PASS | 144fps: no early readiness; exact 43-degree FOV at first frame on/after 0.15s
+PASS | Releasing ADS cancels without entering AimReady
+PASS | Recovery zoom-out reaches exact normal FOV
+PASS | Authored player prefab duration=0.15s
+PASS | Server validation and laser relay method bodies unchanged
+Editor compilation passed. This checks the actual zoom transition method; no online session or build was started.

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Pistol",
+    "startsAtSeconds": 0.65,
+    "gameGain": 0.38
+  },
+  {
+    "name": "UI",
+    "startsAtSeconds": 1.78,
+    "gameGain": 0.55
+  },
+  {
+    "name": "Countdown",
+    "startsAtSeconds": 2.63,
+    "gameGain": 0.55
+  },
+  {
+    "name": "Whistle",
+    "startsAtSeconds": 3.6,
+    "gameGain": 0.42
+  },
+  {
+    "name": "RobotStep",
+    "startsAtSeconds": 4.83,
+    "gameGain": 0.34
+  },
+  {
+    "name": "Reload",
+    "startsAtSeconds": 5.71,
+    "gameGain": 0.58
+  },
+  {
+    "name": "Cheer",
+    "startsAtSeconds": 7.06,
+    "gameGain": 0.5
+  }
+]

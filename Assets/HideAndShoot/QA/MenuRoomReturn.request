@@ -1,0 +1,1 @@
+Regression: create room, refresh host room binding, leave room. Preserve original menu child visibility (including deliberately hidden controls), code-managed layout, TMP font, text field, and create button.

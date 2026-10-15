@@ -1,0 +1,19 @@
+HideAndShoot / Lobby edit-mode verification
+2026-10-12 16:40:57
+PASS: nickname tables are 20 x 20
+PASS: empty/whitespace nickname is rejected
+PASS: user-defined nickname accepted
+PASS: generated default nickname is not empty
+PASS: build settings exactly MenuLobbyScene + GameScene
+PASS: PlayerAvatar / NPCActor prefabs available
+PASS: MenuLobbyCanvas has MenuLobbyUI
+PASS: UI hierarchy has NicknameInput
+PASS: UI hierarchy has CreateRoomButton
+PASS: UI hierarchy has RoomCodeInput
+PASS: UI hierarchy has JoinRoomButton
+PASS: UI hierarchy has RoomOverlay
+PASS: UI hierarchy has ConnectedPlayers
+PASS: UI hierarchy has CopyCodeButton
+PASS: UI hierarchy has HostPlayButton
+PASS: room overlay initially hidden
+Totals: 16 PASS / 0 FAIL.

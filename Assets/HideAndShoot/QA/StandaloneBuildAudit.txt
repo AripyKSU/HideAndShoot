@@ -1,0 +1,6 @@
+2026-10-12 16:43:07
+Result=Succeeded
+Errors=0
+Warnings=1
+Bytes=190318080
+Output=C:\UnityProject\HideAndShoot\Builds/QA_Standalone\HideAndShoot.exe

@@ -1,0 +1,29 @@
+Editable UI regression audit
+PASS: MenuLobbyCanvas scene object exists
+PASS: No legacy Text in menu
+PASS: Two editable TMP inputs in menu
+PASS: Eight authored room roster rows
+PASS: InitializeUI does not generate GameObjects
+PASS: Three cycles of room enter/leave never rebuild UI: cycle 1
+PASS: CreateRoomButton visibility restored after cycle 1
+PASS: RoomCodeInput visibility restored after cycle 1
+PASS: ConnectionHint visibility restored after cycle 1
+PASS: Three cycles of room enter/leave never rebuild UI: cycle 2
+PASS: CreateRoomButton visibility restored after cycle 2
+PASS: RoomCodeInput visibility restored after cycle 2
+PASS: ConnectionHint visibility restored after cycle 2
+PASS: Three cycles of room enter/leave never rebuild UI: cycle 3
+PASS: CreateRoomButton visibility restored after cycle 3
+PASS: RoomCodeInput visibility restored after cycle 3
+PASS: ConnectionHint visibility restored after cycle 3
+PASS: GameplayServices exists
+PASS: Editable HUD canvas saved as a scene object
+PASS: Editable round menu saved as a scene object
+PASS: Editable podium overlay saved as a scene object
+PASS: Original prototype HUD removed
+PASS: No legacy Text remains in GameScene
+PASS: GameHUDPresenter bound to authored HUD
+PASS: HUD references bind without creating any UI GameObjects
+PASS: HUD labels and indicators are wired correctly
+PASS: Round menu and podium presenters exist
+PASS: Editor-authored UI can be modified in Hierarchy without runtime rebuilding.

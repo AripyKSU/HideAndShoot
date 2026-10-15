@@ -1,0 +1,2 @@
+Round=0 Phase=0 Covered=False Players=0
+VisiblePlacementJumps=0

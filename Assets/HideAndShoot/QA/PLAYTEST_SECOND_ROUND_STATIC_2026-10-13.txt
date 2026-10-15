@@ -1,0 +1,19 @@
+HideAndShoot second playtest fixes: STATIC CODE + SOURCE-ASSET QA ONLY
+2026-10-13
+
+PASS | room code same Y as copy button
+PASS | room code label separated from room population
+PASS | ammo monotonic 5s spawn clock and physical grounding
+PASS | ammo trigger overlap + visible pickup glow
+PASS | 1P gun camera mounted and world gun handed to humanoid
+PASS | owner gun and world gun use real Quaternius resource
+PASS | ADS hides arm and uses FOV zoom
+PASS | crosshair bigger and outlined
+PASS | laser shot predicted locally and host accepted for observers
+PASS | slightly larger host-validated target capsule
+PASS | countdown NPC frozen then released only on Host Active
+PASS | NGO prefab hash native repair installer exists
+
+12/12 checks passed.
+This is NOT a native Unity rendered/NGO session test.
+Runtime gun visibility, actual ammo spawn/collection and NPC countdown still require Play retest.

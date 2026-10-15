@@ -1,0 +1,884 @@
+Compact UI 1366x768 verification
+PASS | Menu starts with discoverable controls including Tab
+PASS | Menu_Open text fits Text
+PASS | Menu_Open text stays on screen Text
+PASS | Menu_Open text fits Key0
+PASS | Menu_Open text stays on screen Key0
+PASS | Menu_Open text fits Action0
+PASS | Menu_Open text stays on screen Action0
+PASS | Menu_Open text fits Key1
+PASS | Menu_Open text stays on screen Key1
+PASS | Menu_Open text fits Action1
+PASS | Menu_Open text stays on screen Action1
+PASS | Menu_Open text fits Key2
+PASS | Menu_Open text stays on screen Key2
+PASS | Menu_Open text fits Action2
+PASS | Menu_Open text stays on screen Action2
+PASS | Menu_Open text fits Key3
+PASS | Menu_Open text stays on screen Key3
+PASS | Menu_Open text fits Action3
+PASS | Menu_Open text stays on screen Action3
+PASS | Menu_Open text fits Key4
+PASS | Menu_Open text stays on screen Key4
+PASS | Menu_Open text fits Action4
+PASS | Menu_Open text stays on screen Action4
+PASS | Menu_Open text fits Key5
+PASS | Menu_Open text stays on screen Key5
+PASS | Menu_Open text fits Action5
+PASS | Menu_Open text stays on screen Action5
+PASS | Menu_Open text fits Key6
+PASS | Menu_Open text stays on screen Key6
+PASS | Menu_Open text fits Action6
+PASS | Menu_Open text stays on screen Action6
+PASS | Menu_Open text fits Key7
+PASS | Menu_Open text stays on screen Key7
+PASS | Menu_Open text fits Action7
+PASS | Menu_Open text stays on screen Action7
+PASS | Menu_Open text fits Goal
+PASS | Menu_Open text stays on screen Goal
+PASS | Menu_Open text fits GameTitle
+PASS | Menu_Open text stays on screen GameTitle
+PASS | Menu_Open text fits NicknameLabel
+PASS | Menu_Open text stays on screen NicknameLabel
+PASS | Menu_Open text fits ValueText
+PASS | Menu_Open text stays on screen ValueText
+PASS | Menu_Open text fits Placeholder
+PASS | Menu_Open text stays on screen Placeholder
+PASS | Menu_Open text fits Text
+PASS | Menu_Open text stays on screen Text
+PASS | Menu_Open text fits RoomCodeLabel
+PASS | Menu_Open text stays on screen RoomCodeLabel
+PASS | Menu_Open text fits ValueText
+PASS | Menu_Open text stays on screen ValueText
+PASS | Menu_Open text fits Placeholder
+PASS | Menu_Open text stays on screen Placeholder
+PASS | Menu_Open text fits Text
+PASS | Menu_Open text stays on screen Text
+PASS | Menu_Open text fits MenuStatusText
+PASS | Menu_Open text stays on screen MenuStatusText
+PASS | Menu_Open text fits ConnectionHint
+PASS | Menu_Open text stays on screen ConnectionHint
+PASS | Guide button folds content
+PASS | Menu_Folded text fits Text
+PASS | Menu_Folded text stays on screen Text
+PASS | Menu_Folded text fits GameTitle
+PASS | Menu_Folded text stays on screen GameTitle
+PASS | Menu_Folded text fits NicknameLabel
+PASS | Menu_Folded text stays on screen NicknameLabel
+PASS | Menu_Folded text fits ValueText
+PASS | Menu_Folded text stays on screen ValueText
+PASS | Menu_Folded text fits Placeholder
+PASS | Menu_Folded text stays on screen Placeholder
+PASS | Menu_Folded text fits Text
+PASS | Menu_Folded text stays on screen Text
+PASS | Menu_Folded text fits RoomCodeLabel
+PASS | Menu_Folded text stays on screen RoomCodeLabel
+PASS | Menu_Folded text fits ValueText
+PASS | Menu_Folded text stays on screen ValueText
+PASS | Menu_Folded text fits Placeholder
+PASS | Menu_Folded text stays on screen Placeholder
+PASS | Menu_Folded text fits Text
+PASS | Menu_Folded text stays on screen Text
+PASS | Menu_Folded text fits MenuStatusText
+PASS | Menu_Folded text stays on screen MenuStatusText
+PASS | Menu_Folded text fits ConnectionHint
+PASS | Menu_Folded text stays on screen ConnectionHint
+PASS | Eight-player host can start
+PASS | Lobby_1366x768 text fits Text
+PASS | Lobby_1366x768 text stays on screen Text
+PASS | Lobby_1366x768 text fits GameTitle
+PASS | Lobby_1366x768 text stays on screen GameTitle
+PASS | Lobby_1366x768 text fits PeopleAndCode
+PASS | Lobby_1366x768 text stays on screen PeopleAndCode
+PASS | Lobby_1366x768 text fits Text
+PASS | Lobby_1366x768 text stays on screen Text
+PASS | Lobby_1366x768 text fits Text
+PASS | Lobby_1366x768 text stays on screen Text
+PASS | Lobby_1366x768 text fits RoomCodeSameRow
+PASS | Lobby_1366x768 text stays on screen RoomCodeSameRow
+PASS | Lobby_1366x768 text fits RosterHeading
+PASS | Lobby_1366x768 text stays on screen RosterHeading
+PASS | Lobby_1366x768 text fits LatencyHeading
+PASS | Lobby_1366x768 text stays on screen LatencyHeading
+PASS | Lobby_1366x768 text fits Slot
+PASS | Lobby_1366x768 text stays on screen Slot
+PASS | Lobby_1366x768 text fits Nickname
+PASS | Lobby_1366x768 text stays on screen Nickname
+PASS | Lobby_1366x768 text fits HostBadge
+PASS | Lobby_1366x768 text stays on screen HostBadge
+PASS | Lobby_1366x768 text fits Ping
+PASS | Lobby_1366x768 text stays on screen Ping
+PASS | Lobby_1366x768 text fits Slot
+PASS | Lobby_1366x768 text stays on screen Slot
+PASS | Lobby_1366x768 text fits Nickname
+PASS | Lobby_1366x768 text stays on screen Nickname
+PASS | Lobby_1366x768 text fits Ping
+PASS | Lobby_1366x768 text stays on screen Ping
+PASS | Lobby_1366x768 text fits Slot
+PASS | Lobby_1366x768 text stays on screen Slot
+PASS | Lobby_1366x768 text fits Nickname
+PASS | Lobby_1366x768 text stays on screen Nickname
+PASS | Lobby_1366x768 text fits Ping
+PASS | Lobby_1366x768 text stays on screen Ping
+PASS | Lobby_1366x768 text fits Slot
+PASS | Lobby_1366x768 text stays on screen Slot
+PASS | Lobby_1366x768 text fits Nickname
+PASS | Lobby_1366x768 text stays on screen Nickname
+PASS | Lobby_1366x768 text fits Ping
+PASS | Lobby_1366x768 text stays on screen Ping
+PASS | Lobby_1366x768 text fits Slot
+PASS | Lobby_1366x768 text stays on screen Slot
+PASS | Lobby_1366x768 text fits Nickname
+PASS | Lobby_1366x768 text stays on screen Nickname
+PASS | Lobby_1366x768 text fits Ping
+PASS | Lobby_1366x768 text stays on screen Ping
+PASS | Lobby_1366x768 text fits Slot
+PASS | Lobby_1366x768 text stays on screen Slot
+PASS | Lobby_1366x768 text fits Nickname
+PASS | Lobby_1366x768 text stays on screen Nickname
+PASS | Lobby_1366x768 text fits Ping
+PASS | Lobby_1366x768 text stays on screen Ping
+PASS | Lobby_1366x768 text fits Slot
+PASS | Lobby_1366x768 text stays on screen Slot
+PASS | Lobby_1366x768 text fits Nickname
+PASS | Lobby_1366x768 text stays on screen Nickname
+PASS | Lobby_1366x768 text fits Ping
+PASS | Lobby_1366x768 text stays on screen Ping
+PASS | Lobby_1366x768 text fits Slot
+PASS | Lobby_1366x768 text stays on screen Slot
+PASS | Lobby_1366x768 text fits Nickname
+PASS | Lobby_1366x768 text stays on screen Nickname
+PASS | Lobby_1366x768 text fits Ping
+PASS | Lobby_1366x768 text stays on screen Ping
+PASS | Lobby_1366x768 text fits RoomReadiness
+PASS | Lobby_1366x768 text stays on screen RoomReadiness
+PASS | Lobby_1366x768 text fits Text
+PASS | Lobby_1366x768 text stays on screen Text
+PASS | Lobby_1366x768 text fits RoomStatusText
+PASS | Lobby_1366x768 text stays on screen RoomStatusText
+PASS | Lobby_1280x720 text fits Text
+PASS | Lobby_1280x720 text stays on screen Text
+PASS | Lobby_1280x720 text fits GameTitle
+PASS | Lobby_1280x720 text stays on screen GameTitle
+PASS | Lobby_1280x720 text fits PeopleAndCode
+PASS | Lobby_1280x720 text stays on screen PeopleAndCode
+PASS | Lobby_1280x720 text fits Text
+PASS | Lobby_1280x720 text stays on screen Text
+PASS | Lobby_1280x720 text fits Text
+PASS | Lobby_1280x720 text stays on screen Text
+PASS | Lobby_1280x720 text fits RoomCodeSameRow
+PASS | Lobby_1280x720 text stays on screen RoomCodeSameRow
+PASS | Lobby_1280x720 text fits RosterHeading
+PASS | Lobby_1280x720 text stays on screen RosterHeading
+PASS | Lobby_1280x720 text fits LatencyHeading
+PASS | Lobby_1280x720 text stays on screen LatencyHeading
+PASS | Lobby_1280x720 text fits Slot
+PASS | Lobby_1280x720 text stays on screen Slot
+PASS | Lobby_1280x720 text fits Nickname
+PASS | Lobby_1280x720 text stays on screen Nickname
+PASS | Lobby_1280x720 text fits HostBadge
+PASS | Lobby_1280x720 text stays on screen HostBadge
+PASS | Lobby_1280x720 text fits Ping
+PASS | Lobby_1280x720 text stays on screen Ping
+PASS | Lobby_1280x720 text fits Slot
+PASS | Lobby_1280x720 text stays on screen Slot
+PASS | Lobby_1280x720 text fits Nickname
+PASS | Lobby_1280x720 text stays on screen Nickname
+PASS | Lobby_1280x720 text fits Ping
+PASS | Lobby_1280x720 text stays on screen Ping
+PASS | Lobby_1280x720 text fits Slot
+PASS | Lobby_1280x720 text stays on screen Slot
+PASS | Lobby_1280x720 text fits Nickname
+PASS | Lobby_1280x720 text stays on screen Nickname
+PASS | Lobby_1280x720 text fits Ping
+PASS | Lobby_1280x720 text stays on screen Ping
+PASS | Lobby_1280x720 text fits Slot
+PASS | Lobby_1280x720 text stays on screen Slot
+PASS | Lobby_1280x720 text fits Nickname
+PASS | Lobby_1280x720 text stays on screen Nickname
+PASS | Lobby_1280x720 text fits Ping
+PASS | Lobby_1280x720 text stays on screen Ping
+PASS | Lobby_1280x720 text fits Slot
+PASS | Lobby_1280x720 text stays on screen Slot
+PASS | Lobby_1280x720 text fits Nickname
+PASS | Lobby_1280x720 text stays on screen Nickname
+PASS | Lobby_1280x720 text fits Ping
+PASS | Lobby_1280x720 text stays on screen Ping
+PASS | Lobby_1280x720 text fits Slot
+PASS | Lobby_1280x720 text stays on screen Slot
+PASS | Lobby_1280x720 text fits Nickname
+PASS | Lobby_1280x720 text stays on screen Nickname
+PASS | Lobby_1280x720 text fits Ping
+PASS | Lobby_1280x720 text stays on screen Ping
+PASS | Lobby_1280x720 text fits Slot
+PASS | Lobby_1280x720 text stays on screen Slot
+PASS | Lobby_1280x720 text fits Nickname
+PASS | Lobby_1280x720 text stays on screen Nickname
+PASS | Lobby_1280x720 text fits Ping
+PASS | Lobby_1280x720 text stays on screen Ping
+PASS | Lobby_1280x720 text fits Slot
+PASS | Lobby_1280x720 text stays on screen Slot
+PASS | Lobby_1280x720 text fits Nickname
+PASS | Lobby_1280x720 text stays on screen Nickname
+PASS | Lobby_1280x720 text fits Ping
+PASS | Lobby_1280x720 text stays on screen Ping
+PASS | Lobby_1280x720 text fits RoomReadiness
+PASS | Lobby_1280x720 text stays on screen RoomReadiness
+PASS | Lobby_1280x720 text fits Text
+PASS | Lobby_1280x720 text stays on screen Text
+PASS | Lobby_1280x720 text fits RoomStatusText
+PASS | Lobby_1280x720 text stays on screen RoomStatusText
+PASS | Lobby_1920x1080 text fits Text
+PASS | Lobby_1920x1080 text stays on screen Text
+PASS | Lobby_1920x1080 text fits GameTitle
+PASS | Lobby_1920x1080 text stays on screen GameTitle
+PASS | Lobby_1920x1080 text fits PeopleAndCode
+PASS | Lobby_1920x1080 text stays on screen PeopleAndCode
+PASS | Lobby_1920x1080 text fits Text
+PASS | Lobby_1920x1080 text stays on screen Text
+PASS | Lobby_1920x1080 text fits Text
+PASS | Lobby_1920x1080 text stays on screen Text
+PASS | Lobby_1920x1080 text fits RoomCodeSameRow
+PASS | Lobby_1920x1080 text stays on screen RoomCodeSameRow
+PASS | Lobby_1920x1080 text fits RosterHeading
+PASS | Lobby_1920x1080 text stays on screen RosterHeading
+PASS | Lobby_1920x1080 text fits LatencyHeading
+PASS | Lobby_1920x1080 text stays on screen LatencyHeading
+PASS | Lobby_1920x1080 text fits Slot
+PASS | Lobby_1920x1080 text stays on screen Slot
+PASS | Lobby_1920x1080 text fits Nickname
+PASS | Lobby_1920x1080 text stays on screen Nickname
+PASS | Lobby_1920x1080 text fits HostBadge
+PASS | Lobby_1920x1080 text stays on screen HostBadge
+PASS | Lobby_1920x1080 text fits Ping
+PASS | Lobby_1920x1080 text stays on screen Ping
+PASS | Lobby_1920x1080 text fits Slot
+PASS | Lobby_1920x1080 text stays on screen Slot
+PASS | Lobby_1920x1080 text fits Nickname
+PASS | Lobby_1920x1080 text stays on screen Nickname
+PASS | Lobby_1920x1080 text fits Ping
+PASS | Lobby_1920x1080 text stays on screen Ping
+PASS | Lobby_1920x1080 text fits Slot
+PASS | Lobby_1920x1080 text stays on screen Slot
+PASS | Lobby_1920x1080 text fits Nickname
+PASS | Lobby_1920x1080 text stays on screen Nickname
+PASS | Lobby_1920x1080 text fits Ping
+PASS | Lobby_1920x1080 text stays on screen Ping
+PASS | Lobby_1920x1080 text fits Slot
+PASS | Lobby_1920x1080 text stays on screen Slot
+PASS | Lobby_1920x1080 text fits Nickname
+PASS | Lobby_1920x1080 text stays on screen Nickname
+PASS | Lobby_1920x1080 text fits Ping
+PASS | Lobby_1920x1080 text stays on screen Ping
+PASS | Lobby_1920x1080 text fits Slot
+PASS | Lobby_1920x1080 text stays on screen Slot
+PASS | Lobby_1920x1080 text fits Nickname
+PASS | Lobby_1920x1080 text stays on screen Nickname
+PASS | Lobby_1920x1080 text fits Ping
+PASS | Lobby_1920x1080 text stays on screen Ping
+PASS | Lobby_1920x1080 text fits Slot
+PASS | Lobby_1920x1080 text stays on screen Slot
+PASS | Lobby_1920x1080 text fits Nickname
+PASS | Lobby_1920x1080 text stays on screen Nickname
+PASS | Lobby_1920x1080 text fits Ping
+PASS | Lobby_1920x1080 text stays on screen Ping
+PASS | Lobby_1920x1080 text fits Slot
+PASS | Lobby_1920x1080 text stays on screen Slot
+PASS | Lobby_1920x1080 text fits Nickname
+PASS | Lobby_1920x1080 text stays on screen Nickname
+PASS | Lobby_1920x1080 text fits Ping
+PASS | Lobby_1920x1080 text stays on screen Ping
+PASS | Lobby_1920x1080 text fits Slot
+PASS | Lobby_1920x1080 text stays on screen Slot
+PASS | Lobby_1920x1080 text fits Nickname
+PASS | Lobby_1920x1080 text stays on screen Nickname
+PASS | Lobby_1920x1080 text fits Ping
+PASS | Lobby_1920x1080 text stays on screen Ping
+PASS | Lobby_1920x1080 text fits RoomReadiness
+PASS | Lobby_1920x1080 text stays on screen RoomReadiness
+PASS | Lobby_1920x1080 text fits Text
+PASS | Lobby_1920x1080 text stays on screen Text
+PASS | Lobby_1920x1080 text fits RoomStatusText
+PASS | Lobby_1920x1080 text stays on screen RoomStatusText
+PASS | Client keeps host-only start hidden
+PASS | Lobby_Client text fits Text
+PASS | Lobby_Client text stays on screen Text
+PASS | Lobby_Client text fits GameTitle
+PASS | Lobby_Client text stays on screen GameTitle
+PASS | Lobby_Client text fits PeopleAndCode
+PASS | Lobby_Client text stays on screen PeopleAndCode
+PASS | Lobby_Client text fits Text
+PASS | Lobby_Client text stays on screen Text
+PASS | Lobby_Client text fits RoomCodeSameRow
+PASS | Lobby_Client text stays on screen RoomCodeSameRow
+PASS | Lobby_Client text fits RosterHeading
+PASS | Lobby_Client text stays on screen RosterHeading
+PASS | Lobby_Client text fits LatencyHeading
+PASS | Lobby_Client text stays on screen LatencyHeading
+PASS | Lobby_Client text fits Slot
+PASS | Lobby_Client text stays on screen Slot
+PASS | Lobby_Client text fits Nickname
+PASS | Lobby_Client text stays on screen Nickname
+PASS | Lobby_Client text fits Slot
+PASS | Lobby_Client text stays on screen Slot
+PASS | Lobby_Client text fits Nickname
+PASS | Lobby_Client text stays on screen Nickname
+PASS | Lobby_Client text fits Slot
+PASS | Lobby_Client text stays on screen Slot
+PASS | Lobby_Client text fits Nickname
+PASS | Lobby_Client text stays on screen Nickname
+PASS | Lobby_Client text fits Slot
+PASS | Lobby_Client text stays on screen Slot
+PASS | Lobby_Client text fits Nickname
+PASS | Lobby_Client text stays on screen Nickname
+PASS | Lobby_Client text fits Slot
+PASS | Lobby_Client text stays on screen Slot
+PASS | Lobby_Client text fits Nickname
+PASS | Lobby_Client text stays on screen Nickname
+PASS | Lobby_Client text fits Slot
+PASS | Lobby_Client text stays on screen Slot
+PASS | Lobby_Client text fits Nickname
+PASS | Lobby_Client text stays on screen Nickname
+PASS | Lobby_Client text fits Slot
+PASS | Lobby_Client text stays on screen Slot
+PASS | Lobby_Client text fits Nickname
+PASS | Lobby_Client text stays on screen Nickname
+PASS | Lobby_Client text fits Slot
+PASS | Lobby_Client text stays on screen Slot
+PASS | Lobby_Client text fits Nickname
+PASS | Lobby_Client text stays on screen Nickname
+PASS | Lobby_Client text fits RoomReadiness
+PASS | Lobby_Client text stays on screen RoomReadiness
+PASS | Lobby_Client text fits Text
+PASS | Lobby_Client text stays on screen Text
+PASS | Lobby_Client text fits RoomStatusText
+PASS | Lobby_Client text stays on screen RoomStatusText
+PASS | Folded guide survives entering and leaving a room
+PASS | Room leave restores TacticalFrame
+PASS | Room leave restores NicknameLabel
+PASS | Room leave restores NicknameInput
+PASS | Room leave restores CreateRoomButton
+PASS | Room leave restores NicknameDivider
+PASS | Room leave restores RoomCodeLabel
+PASS | Room leave restores RoomCodeInput
+PASS | Room leave restores JoinRoomButton
+PASS | Room leave restores MenuStatusText
+PASS | Room leave restores AccentRail
+PASS | Room leave restores AccentFoot
+PASS | Room leave restores ConnectionHint
+PASS | Room leave restores RoomOverlay
+PASS | HUD_active_1366x768 text fits Text
+PASS | HUD_active_1366x768 text stays on screen Text
+PASS | HUD_active_1366x768 text fits Text
+PASS | HUD_active_1366x768 text stays on screen Text
+PASS | HUD_active_1366x768 text fits Text
+PASS | HUD_active_1366x768 text stays on screen Text
+PASS | active separates RoundInfo and Ammo
+PASS | active separates RoundInfo and ControlsGuide
+PASS | active separates Ammo and ControlsGuide
+PASS | active shows scoreboard only when requested
+PASS | HUD_spectator_1366x768 text fits Text
+PASS | HUD_spectator_1366x768 text stays on screen Text
+PASS | HUD_spectator_1366x768 text fits Text
+PASS | HUD_spectator_1366x768 text stays on screen Text
+PASS | spectator separates RoundInfo and ControlsGuide
+PASS | spectator shows scoreboard only when requested
+PASS | HUD_scoreboard_1366x768 text fits Text
+PASS | HUD_scoreboard_1366x768 text stays on screen Text
+PASS | HUD_scoreboard_1366x768 text fits Text
+PASS | HUD_scoreboard_1366x768 text stays on screen Text
+PASS | HUD_scoreboard_1366x768 text fits Text
+PASS | HUD_scoreboard_1366x768 text stays on screen Text
+PASS | HUD_scoreboard_1366x768 text fits CloseHint
+PASS | HUD_scoreboard_1366x768 text stays on screen CloseHint
+PASS | HUD_scoreboard_1366x768 text fits Rank
+PASS | HUD_scoreboard_1366x768 text stays on screen Rank
+PASS | HUD_scoreboard_1366x768 text fits Nickname
+PASS | HUD_scoreboard_1366x768 text stays on screen Nickname
+PASS | HUD_scoreboard_1366x768 text fits Wins
+PASS | HUD_scoreboard_1366x768 text stays on screen Wins
+PASS | HUD_scoreboard_1366x768 text fits Rank
+PASS | HUD_scoreboard_1366x768 text stays on screen Rank
+PASS | HUD_scoreboard_1366x768 text fits Nickname
+PASS | HUD_scoreboard_1366x768 text stays on screen Nickname
+PASS | HUD_scoreboard_1366x768 text fits Wins
+PASS | HUD_scoreboard_1366x768 text stays on screen Wins
+PASS | HUD_scoreboard_1366x768 text fits Rank
+PASS | HUD_scoreboard_1366x768 text stays on screen Rank
+PASS | HUD_scoreboard_1366x768 text fits Nickname
+PASS | HUD_scoreboard_1366x768 text stays on screen Nickname
+PASS | HUD_scoreboard_1366x768 text fits Wins
+PASS | HUD_scoreboard_1366x768 text stays on screen Wins
+PASS | HUD_scoreboard_1366x768 text fits Rank
+PASS | HUD_scoreboard_1366x768 text stays on screen Rank
+PASS | HUD_scoreboard_1366x768 text fits Nickname
+PASS | HUD_scoreboard_1366x768 text stays on screen Nickname
+PASS | HUD_scoreboard_1366x768 text fits Wins
+PASS | HUD_scoreboard_1366x768 text stays on screen Wins
+PASS | HUD_scoreboard_1366x768 text fits Rank
+PASS | HUD_scoreboard_1366x768 text stays on screen Rank
+PASS | HUD_scoreboard_1366x768 text fits Nickname
+PASS | HUD_scoreboard_1366x768 text stays on screen Nickname
+PASS | HUD_scoreboard_1366x768 text fits Wins
+PASS | HUD_scoreboard_1366x768 text stays on screen Wins
+PASS | HUD_scoreboard_1366x768 text fits Rank
+PASS | HUD_scoreboard_1366x768 text stays on screen Rank
+PASS | HUD_scoreboard_1366x768 text fits Nickname
+PASS | HUD_scoreboard_1366x768 text stays on screen Nickname
+PASS | HUD_scoreboard_1366x768 text fits Wins
+PASS | HUD_scoreboard_1366x768 text stays on screen Wins
+PASS | HUD_scoreboard_1366x768 text fits Rank
+PASS | HUD_scoreboard_1366x768 text stays on screen Rank
+PASS | HUD_scoreboard_1366x768 text fits Nickname
+PASS | HUD_scoreboard_1366x768 text stays on screen Nickname
+PASS | HUD_scoreboard_1366x768 text fits Wins
+PASS | HUD_scoreboard_1366x768 text stays on screen Wins
+PASS | HUD_scoreboard_1366x768 text fits Rank
+PASS | HUD_scoreboard_1366x768 text stays on screen Rank
+PASS | HUD_scoreboard_1366x768 text fits Nickname
+PASS | HUD_scoreboard_1366x768 text stays on screen Nickname
+PASS | HUD_scoreboard_1366x768 text fits Wins
+PASS | HUD_scoreboard_1366x768 text stays on screen Wins
+PASS | HUD_scoreboard_1366x768 text fits Rule
+PASS | HUD_scoreboard_1366x768 text stays on screen Rule
+PASS | scoreboard separates RoundInfo and Ammo
+PASS | scoreboard separates RoundInfo and RankedScore
+PASS | scoreboard separates Ammo and RankedScore
+PASS | scoreboard shows scoreboard only when requested
+PASS | HUD_toast_1366x768 text fits Text
+PASS | HUD_toast_1366x768 text stays on screen Text
+PASS | HUD_toast_1366x768 text fits Text
+PASS | HUD_toast_1366x768 text stays on screen Text
+PASS | HUD_toast_1366x768 text fits Text
+PASS | HUD_toast_1366x768 text stays on screen Text
+PASS | HUD_toast_1366x768 text fits Text
+PASS | HUD_toast_1366x768 text stays on screen Text
+PASS | toast separates RoundInfo and Ammo
+PASS | toast separates RoundInfo and AmmoFeedback
+PASS | toast separates RoundInfo and ControlsGuide
+PASS | toast separates Ammo and AmmoFeedback
+PASS | toast separates Ammo and ControlsGuide
+PASS | toast separates AmmoFeedback and ControlsGuide
+PASS | toast shows scoreboard only when requested
+PASS | HUD_sensitivity_1366x768 text fits Text
+PASS | HUD_sensitivity_1366x768 text stays on screen Text
+PASS | HUD_sensitivity_1366x768 text fits Text
+PASS | HUD_sensitivity_1366x768 text stays on screen Text
+PASS | HUD_sensitivity_1366x768 text fits Text
+PASS | HUD_sensitivity_1366x768 text stays on screen Text
+PASS | HUD_sensitivity_1366x768 text fits Text
+PASS | HUD_sensitivity_1366x768 text stays on screen Text
+PASS | sensitivity separates RoundInfo and Ammo
+PASS | sensitivity separates RoundInfo and AmmoFeedback
+PASS | sensitivity separates RoundInfo and ControlsGuide
+PASS | sensitivity separates Ammo and AmmoFeedback
+PASS | sensitivity separates Ammo and ControlsGuide
+PASS | sensitivity separates AmmoFeedback and ControlsGuide
+PASS | sensitivity shows scoreboard only when requested
+PASS | HUD_help_1366x768 text fits Text
+PASS | HUD_help_1366x768 text stays on screen Text
+PASS | HUD_help_1366x768 text fits Text
+PASS | HUD_help_1366x768 text stays on screen Text
+PASS | HUD_help_1366x768 text fits Text
+PASS | HUD_help_1366x768 text stays on screen Text
+PASS | HUD_help_1366x768 text fits Key0
+PASS | HUD_help_1366x768 text stays on screen Key0
+PASS | HUD_help_1366x768 text fits Action0
+PASS | HUD_help_1366x768 text stays on screen Action0
+PASS | HUD_help_1366x768 text fits Key1
+PASS | HUD_help_1366x768 text stays on screen Key1
+PASS | HUD_help_1366x768 text fits Action1
+PASS | HUD_help_1366x768 text stays on screen Action1
+PASS | HUD_help_1366x768 text fits Key2
+PASS | HUD_help_1366x768 text stays on screen Key2
+PASS | HUD_help_1366x768 text fits Action2
+PASS | HUD_help_1366x768 text stays on screen Action2
+PASS | HUD_help_1366x768 text fits Key3
+PASS | HUD_help_1366x768 text stays on screen Key3
+PASS | HUD_help_1366x768 text fits Action3
+PASS | HUD_help_1366x768 text stays on screen Action3
+PASS | HUD_help_1366x768 text fits Key4
+PASS | HUD_help_1366x768 text stays on screen Key4
+PASS | HUD_help_1366x768 text fits Action4
+PASS | HUD_help_1366x768 text stays on screen Action4
+PASS | HUD_help_1366x768 text fits Key5
+PASS | HUD_help_1366x768 text stays on screen Key5
+PASS | HUD_help_1366x768 text fits Action5
+PASS | HUD_help_1366x768 text stays on screen Action5
+PASS | HUD_help_1366x768 text fits Key6
+PASS | HUD_help_1366x768 text stays on screen Key6
+PASS | HUD_help_1366x768 text fits Action6
+PASS | HUD_help_1366x768 text stays on screen Action6
+PASS | HUD_help_1366x768 text fits Key7
+PASS | HUD_help_1366x768 text stays on screen Key7
+PASS | HUD_help_1366x768 text fits Action7
+PASS | HUD_help_1366x768 text stays on screen Action7
+PASS | help separates RoundInfo and Ammo
+PASS | help separates RoundInfo and ControlsGuide
+PASS | help separates Ammo and ControlsGuide
+PASS | help shows scoreboard only when requested
+PASS | HUD_winner_1366x768 text fits Text
+PASS | HUD_winner_1366x768 text stays on screen Text
+PASS | HUD_winner_1366x768 text fits Text
+PASS | HUD_winner_1366x768 text stays on screen Text
+PASS | winner separates RoundInfo and WinnerLabel
+PASS | winner shows scoreboard only when requested
+PASS | HUD_countdown_1366x768 text fits Text
+PASS | HUD_countdown_1366x768 text stays on screen Text
+PASS | HUD_countdown_1366x768 text fits Text
+PASS | HUD_countdown_1366x768 text stays on screen Text
+PASS | countdown separates RoundInfo and RoundCountdown
+PASS | countdown shows scoreboard only when requested
+PASS | HUD_active_1280x720 text fits Text
+PASS | HUD_active_1280x720 text stays on screen Text
+PASS | HUD_active_1280x720 text fits Text
+PASS | HUD_active_1280x720 text stays on screen Text
+PASS | HUD_active_1280x720 text fits Text
+PASS | HUD_active_1280x720 text stays on screen Text
+PASS | active separates RoundInfo and Ammo
+PASS | active separates RoundInfo and ControlsGuide
+PASS | active separates Ammo and ControlsGuide
+PASS | active shows scoreboard only when requested
+PASS | HUD_spectator_1280x720 text fits Text
+PASS | HUD_spectator_1280x720 text stays on screen Text
+PASS | HUD_spectator_1280x720 text fits Text
+PASS | HUD_spectator_1280x720 text stays on screen Text
+PASS | spectator separates RoundInfo and ControlsGuide
+PASS | spectator shows scoreboard only when requested
+PASS | HUD_scoreboard_1280x720 text fits Text
+PASS | HUD_scoreboard_1280x720 text stays on screen Text
+PASS | HUD_scoreboard_1280x720 text fits Text
+PASS | HUD_scoreboard_1280x720 text stays on screen Text
+PASS | HUD_scoreboard_1280x720 text fits Text
+PASS | HUD_scoreboard_1280x720 text stays on screen Text
+PASS | HUD_scoreboard_1280x720 text fits CloseHint
+PASS | HUD_scoreboard_1280x720 text stays on screen CloseHint
+PASS | HUD_scoreboard_1280x720 text fits Rank
+PASS | HUD_scoreboard_1280x720 text stays on screen Rank
+PASS | HUD_scoreboard_1280x720 text fits Nickname
+PASS | HUD_scoreboard_1280x720 text stays on screen Nickname
+PASS | HUD_scoreboard_1280x720 text fits Wins
+PASS | HUD_scoreboard_1280x720 text stays on screen Wins
+PASS | HUD_scoreboard_1280x720 text fits Rank
+PASS | HUD_scoreboard_1280x720 text stays on screen Rank
+PASS | HUD_scoreboard_1280x720 text fits Nickname
+PASS | HUD_scoreboard_1280x720 text stays on screen Nickname
+PASS | HUD_scoreboard_1280x720 text fits Wins
+PASS | HUD_scoreboard_1280x720 text stays on screen Wins
+PASS | HUD_scoreboard_1280x720 text fits Rank
+PASS | HUD_scoreboard_1280x720 text stays on screen Rank
+PASS | HUD_scoreboard_1280x720 text fits Nickname
+PASS | HUD_scoreboard_1280x720 text stays on screen Nickname
+PASS | HUD_scoreboard_1280x720 text fits Wins
+PASS | HUD_scoreboard_1280x720 text stays on screen Wins
+PASS | HUD_scoreboard_1280x720 text fits Rank
+PASS | HUD_scoreboard_1280x720 text stays on screen Rank
+PASS | HUD_scoreboard_1280x720 text fits Nickname
+PASS | HUD_scoreboard_1280x720 text stays on screen Nickname
+PASS | HUD_scoreboard_1280x720 text fits Wins
+PASS | HUD_scoreboard_1280x720 text stays on screen Wins
+PASS | HUD_scoreboard_1280x720 text fits Rank
+PASS | HUD_scoreboard_1280x720 text stays on screen Rank
+PASS | HUD_scoreboard_1280x720 text fits Nickname
+PASS | HUD_scoreboard_1280x720 text stays on screen Nickname
+PASS | HUD_scoreboard_1280x720 text fits Wins
+PASS | HUD_scoreboard_1280x720 text stays on screen Wins
+PASS | HUD_scoreboard_1280x720 text fits Rank
+PASS | HUD_scoreboard_1280x720 text stays on screen Rank
+PASS | HUD_scoreboard_1280x720 text fits Nickname
+PASS | HUD_scoreboard_1280x720 text stays on screen Nickname
+PASS | HUD_scoreboard_1280x720 text fits Wins
+PASS | HUD_scoreboard_1280x720 text stays on screen Wins
+PASS | HUD_scoreboard_1280x720 text fits Rank
+PASS | HUD_scoreboard_1280x720 text stays on screen Rank
+PASS | HUD_scoreboard_1280x720 text fits Nickname
+PASS | HUD_scoreboard_1280x720 text stays on screen Nickname
+PASS | HUD_scoreboard_1280x720 text fits Wins
+PASS | HUD_scoreboard_1280x720 text stays on screen Wins
+PASS | HUD_scoreboard_1280x720 text fits Rank
+PASS | HUD_scoreboard_1280x720 text stays on screen Rank
+PASS | HUD_scoreboard_1280x720 text fits Nickname
+PASS | HUD_scoreboard_1280x720 text stays on screen Nickname
+PASS | HUD_scoreboard_1280x720 text fits Wins
+PASS | HUD_scoreboard_1280x720 text stays on screen Wins
+PASS | HUD_scoreboard_1280x720 text fits Rule
+PASS | HUD_scoreboard_1280x720 text stays on screen Rule
+PASS | scoreboard separates RoundInfo and Ammo
+PASS | scoreboard separates RoundInfo and RankedScore
+PASS | scoreboard separates Ammo and RankedScore
+PASS | scoreboard shows scoreboard only when requested
+PASS | HUD_toast_1280x720 text fits Text
+PASS | HUD_toast_1280x720 text stays on screen Text
+PASS | HUD_toast_1280x720 text fits Text
+PASS | HUD_toast_1280x720 text stays on screen Text
+PASS | HUD_toast_1280x720 text fits Text
+PASS | HUD_toast_1280x720 text stays on screen Text
+PASS | HUD_toast_1280x720 text fits Text
+PASS | HUD_toast_1280x720 text stays on screen Text
+PASS | toast separates RoundInfo and Ammo
+PASS | toast separates RoundInfo and AmmoFeedback
+PASS | toast separates RoundInfo and ControlsGuide
+PASS | toast separates Ammo and AmmoFeedback
+PASS | toast separates Ammo and ControlsGuide
+PASS | toast separates AmmoFeedback and ControlsGuide
+PASS | toast shows scoreboard only when requested
+PASS | HUD_sensitivity_1280x720 text fits Text
+PASS | HUD_sensitivity_1280x720 text stays on screen Text
+PASS | HUD_sensitivity_1280x720 text fits Text
+PASS | HUD_sensitivity_1280x720 text stays on screen Text
+PASS | HUD_sensitivity_1280x720 text fits Text
+PASS | HUD_sensitivity_1280x720 text stays on screen Text
+PASS | HUD_sensitivity_1280x720 text fits Text
+PASS | HUD_sensitivity_1280x720 text stays on screen Text
+PASS | sensitivity separates RoundInfo and Ammo
+PASS | sensitivity separates RoundInfo and AmmoFeedback
+PASS | sensitivity separates RoundInfo and ControlsGuide
+PASS | sensitivity separates Ammo and AmmoFeedback
+PASS | sensitivity separates Ammo and ControlsGuide
+PASS | sensitivity separates AmmoFeedback and ControlsGuide
+PASS | sensitivity shows scoreboard only when requested
+PASS | HUD_help_1280x720 text fits Text
+PASS | HUD_help_1280x720 text stays on screen Text
+PASS | HUD_help_1280x720 text fits Text
+PASS | HUD_help_1280x720 text stays on screen Text
+PASS | HUD_help_1280x720 text fits Text
+PASS | HUD_help_1280x720 text stays on screen Text
+PASS | HUD_help_1280x720 text fits Key0
+PASS | HUD_help_1280x720 text stays on screen Key0
+PASS | HUD_help_1280x720 text fits Action0
+PASS | HUD_help_1280x720 text stays on screen Action0
+PASS | HUD_help_1280x720 text fits Key1
+PASS | HUD_help_1280x720 text stays on screen Key1
+PASS | HUD_help_1280x720 text fits Action1
+PASS | HUD_help_1280x720 text stays on screen Action1
+PASS | HUD_help_1280x720 text fits Key2
+PASS | HUD_help_1280x720 text stays on screen Key2
+PASS | HUD_help_1280x720 text fits Action2
+PASS | HUD_help_1280x720 text stays on screen Action2
+PASS | HUD_help_1280x720 text fits Key3
+PASS | HUD_help_1280x720 text stays on screen Key3
+PASS | HUD_help_1280x720 text fits Action3
+PASS | HUD_help_1280x720 text stays on screen Action3
+PASS | HUD_help_1280x720 text fits Key4
+PASS | HUD_help_1280x720 text stays on screen Key4
+PASS | HUD_help_1280x720 text fits Action4
+PASS | HUD_help_1280x720 text stays on screen Action4
+PASS | HUD_help_1280x720 text fits Key5
+PASS | HUD_help_1280x720 text stays on screen Key5
+PASS | HUD_help_1280x720 text fits Action5
+PASS | HUD_help_1280x720 text stays on screen Action5
+PASS | HUD_help_1280x720 text fits Key6
+PASS | HUD_help_1280x720 text stays on screen Key6
+PASS | HUD_help_1280x720 text fits Action6
+PASS | HUD_help_1280x720 text stays on screen Action6
+PASS | HUD_help_1280x720 text fits Key7
+PASS | HUD_help_1280x720 text stays on screen Key7
+PASS | HUD_help_1280x720 text fits Action7
+PASS | HUD_help_1280x720 text stays on screen Action7
+PASS | help separates RoundInfo and Ammo
+PASS | help separates RoundInfo and ControlsGuide
+PASS | help separates Ammo and ControlsGuide
+PASS | help shows scoreboard only when requested
+PASS | HUD_winner_1280x720 text fits Text
+PASS | HUD_winner_1280x720 text stays on screen Text
+PASS | HUD_winner_1280x720 text fits Text
+PASS | HUD_winner_1280x720 text stays on screen Text
+PASS | winner separates RoundInfo and WinnerLabel
+PASS | winner shows scoreboard only when requested
+PASS | HUD_countdown_1280x720 text fits Text
+PASS | HUD_countdown_1280x720 text stays on screen Text
+PASS | HUD_countdown_1280x720 text fits Text
+PASS | HUD_countdown_1280x720 text stays on screen Text
+PASS | countdown separates RoundInfo and RoundCountdown
+PASS | countdown shows scoreboard only when requested
+PASS | HUD_active_1920x1080 text fits Text
+PASS | HUD_active_1920x1080 text stays on screen Text
+PASS | HUD_active_1920x1080 text fits Text
+PASS | HUD_active_1920x1080 text stays on screen Text
+PASS | HUD_active_1920x1080 text fits Text
+PASS | HUD_active_1920x1080 text stays on screen Text
+PASS | active separates RoundInfo and Ammo
+PASS | active separates RoundInfo and ControlsGuide
+PASS | active separates Ammo and ControlsGuide
+PASS | active shows scoreboard only when requested
+PASS | HUD_spectator_1920x1080 text fits Text
+PASS | HUD_spectator_1920x1080 text stays on screen Text
+PASS | HUD_spectator_1920x1080 text fits Text
+PASS | HUD_spectator_1920x1080 text stays on screen Text
+PASS | spectator separates RoundInfo and ControlsGuide
+PASS | spectator shows scoreboard only when requested
+PASS | HUD_scoreboard_1920x1080 text fits Text
+PASS | HUD_scoreboard_1920x1080 text stays on screen Text
+PASS | HUD_scoreboard_1920x1080 text fits Text
+PASS | HUD_scoreboard_1920x1080 text stays on screen Text
+PASS | HUD_scoreboard_1920x1080 text fits Text
+PASS | HUD_scoreboard_1920x1080 text stays on screen Text
+PASS | HUD_scoreboard_1920x1080 text fits CloseHint
+PASS | HUD_scoreboard_1920x1080 text stays on screen CloseHint
+PASS | HUD_scoreboard_1920x1080 text fits Rank
+PASS | HUD_scoreboard_1920x1080 text stays on screen Rank
+PASS | HUD_scoreboard_1920x1080 text fits Nickname
+PASS | HUD_scoreboard_1920x1080 text stays on screen Nickname
+PASS | HUD_scoreboard_1920x1080 text fits Wins
+PASS | HUD_scoreboard_1920x1080 text stays on screen Wins
+PASS | HUD_scoreboard_1920x1080 text fits Rank
+PASS | HUD_scoreboard_1920x1080 text stays on screen Rank
+PASS | HUD_scoreboard_1920x1080 text fits Nickname
+PASS | HUD_scoreboard_1920x1080 text stays on screen Nickname
+PASS | HUD_scoreboard_1920x1080 text fits Wins
+PASS | HUD_scoreboard_1920x1080 text stays on screen Wins
+PASS | HUD_scoreboard_1920x1080 text fits Rank
+PASS | HUD_scoreboard_1920x1080 text stays on screen Rank
+PASS | HUD_scoreboard_1920x1080 text fits Nickname
+PASS | HUD_scoreboard_1920x1080 text stays on screen Nickname
+PASS | HUD_scoreboard_1920x1080 text fits Wins
+PASS | HUD_scoreboard_1920x1080 text stays on screen Wins
+PASS | HUD_scoreboard_1920x1080 text fits Rank
+PASS | HUD_scoreboard_1920x1080 text stays on screen Rank
+PASS | HUD_scoreboard_1920x1080 text fits Nickname
+PASS | HUD_scoreboard_1920x1080 text stays on screen Nickname
+PASS | HUD_scoreboard_1920x1080 text fits Wins
+PASS | HUD_scoreboard_1920x1080 text stays on screen Wins
+PASS | HUD_scoreboard_1920x1080 text fits Rank
+PASS | HUD_scoreboard_1920x1080 text stays on screen Rank
+PASS | HUD_scoreboard_1920x1080 text fits Nickname
+PASS | HUD_scoreboard_1920x1080 text stays on screen Nickname
+PASS | HUD_scoreboard_1920x1080 text fits Wins
+PASS | HUD_scoreboard_1920x1080 text stays on screen Wins
+PASS | HUD_scoreboard_1920x1080 text fits Rank
+PASS | HUD_scoreboard_1920x1080 text stays on screen Rank
+PASS | HUD_scoreboard_1920x1080 text fits Nickname
+PASS | HUD_scoreboard_1920x1080 text stays on screen Nickname
+PASS | HUD_scoreboard_1920x1080 text fits Wins
+PASS | HUD_scoreboard_1920x1080 text stays on screen Wins
+PASS | HUD_scoreboard_1920x1080 text fits Rank
+PASS | HUD_scoreboard_1920x1080 text stays on screen Rank
+PASS | HUD_scoreboard_1920x1080 text fits Nickname
+PASS | HUD_scoreboard_1920x1080 text stays on screen Nickname
+PASS | HUD_scoreboard_1920x1080 text fits Wins
+PASS | HUD_scoreboard_1920x1080 text stays on screen Wins
+PASS | HUD_scoreboard_1920x1080 text fits Rank
+PASS | HUD_scoreboard_1920x1080 text stays on screen Rank
+PASS | HUD_scoreboard_1920x1080 text fits Nickname
+PASS | HUD_scoreboard_1920x1080 text stays on screen Nickname
+PASS | HUD_scoreboard_1920x1080 text fits Wins
+PASS | HUD_scoreboard_1920x1080 text stays on screen Wins
+PASS | HUD_scoreboard_1920x1080 text fits Rule
+PASS | HUD_scoreboard_1920x1080 text stays on screen Rule
+PASS | scoreboard separates RoundInfo and Ammo
+PASS | scoreboard separates RoundInfo and RankedScore
+PASS | scoreboard separates Ammo and RankedScore
+PASS | scoreboard shows scoreboard only when requested
+PASS | HUD_toast_1920x1080 text fits Text
+PASS | HUD_toast_1920x1080 text stays on screen Text
+PASS | HUD_toast_1920x1080 text fits Text
+PASS | HUD_toast_1920x1080 text stays on screen Text
+PASS | HUD_toast_1920x1080 text fits Text
+PASS | HUD_toast_1920x1080 text stays on screen Text
+PASS | HUD_toast_1920x1080 text fits Text
+PASS | HUD_toast_1920x1080 text stays on screen Text
+PASS | toast separates RoundInfo and Ammo
+PASS | toast separates RoundInfo and AmmoFeedback
+PASS | toast separates RoundInfo and ControlsGuide
+PASS | toast separates Ammo and AmmoFeedback
+PASS | toast separates Ammo and ControlsGuide
+PASS | toast separates AmmoFeedback and ControlsGuide
+PASS | toast shows scoreboard only when requested
+PASS | HUD_sensitivity_1920x1080 text fits Text
+PASS | HUD_sensitivity_1920x1080 text stays on screen Text
+PASS | HUD_sensitivity_1920x1080 text fits Text
+PASS | HUD_sensitivity_1920x1080 text stays on screen Text
+PASS | HUD_sensitivity_1920x1080 text fits Text
+PASS | HUD_sensitivity_1920x1080 text stays on screen Text
+PASS | HUD_sensitivity_1920x1080 text fits Text
+PASS | HUD_sensitivity_1920x1080 text stays on screen Text
+PASS | sensitivity separates RoundInfo and Ammo
+PASS | sensitivity separates RoundInfo and AmmoFeedback
+PASS | sensitivity separates RoundInfo and ControlsGuide
+PASS | sensitivity separates Ammo and AmmoFeedback
+PASS | sensitivity separates Ammo and ControlsGuide
+PASS | sensitivity separates AmmoFeedback and ControlsGuide
+PASS | sensitivity shows scoreboard only when requested
+PASS | HUD_help_1920x1080 text fits Text
+PASS | HUD_help_1920x1080 text stays on screen Text
+PASS | HUD_help_1920x1080 text fits Text
+PASS | HUD_help_1920x1080 text stays on screen Text
+PASS | HUD_help_1920x1080 text fits Text
+PASS | HUD_help_1920x1080 text stays on screen Text
+PASS | HUD_help_1920x1080 text fits Key0
+PASS | HUD_help_1920x1080 text stays on screen Key0
+PASS | HUD_help_1920x1080 text fits Action0
+PASS | HUD_help_1920x1080 text stays on screen Action0
+PASS | HUD_help_1920x1080 text fits Key1
+PASS | HUD_help_1920x1080 text stays on screen Key1
+PASS | HUD_help_1920x1080 text fits Action1
+PASS | HUD_help_1920x1080 text stays on screen Action1
+PASS | HUD_help_1920x1080 text fits Key2
+PASS | HUD_help_1920x1080 text stays on screen Key2
+PASS | HUD_help_1920x1080 text fits Action2
+PASS | HUD_help_1920x1080 text stays on screen Action2
+PASS | HUD_help_1920x1080 text fits Key3
+PASS | HUD_help_1920x1080 text stays on screen Key3
+PASS | HUD_help_1920x1080 text fits Action3
+PASS | HUD_help_1920x1080 text stays on screen Action3
+PASS | HUD_help_1920x1080 text fits Key4
+PASS | HUD_help_1920x1080 text stays on screen Key4
+PASS | HUD_help_1920x1080 text fits Action4
+PASS | HUD_help_1920x1080 text stays on screen Action4
+PASS | HUD_help_1920x1080 text fits Key5
+PASS | HUD_help_1920x1080 text stays on screen Key5
+PASS | HUD_help_1920x1080 text fits Action5
+PASS | HUD_help_1920x1080 text stays on screen Action5
+PASS | HUD_help_1920x1080 text fits Key6
+PASS | HUD_help_1920x1080 text stays on screen Key6
+PASS | HUD_help_1920x1080 text fits Action6
+PASS | HUD_help_1920x1080 text stays on screen Action6
+PASS | HUD_help_1920x1080 text fits Key7
+PASS | HUD_help_1920x1080 text stays on screen Key7
+PASS | HUD_help_1920x1080 text fits Action7
+PASS | HUD_help_1920x1080 text stays on screen Action7
+PASS | help separates RoundInfo and Ammo
+PASS | help separates RoundInfo and ControlsGuide
+PASS | help separates Ammo and ControlsGuide
+PASS | help shows scoreboard only when requested
+PASS | HUD_winner_1920x1080 text fits Text
+PASS | HUD_winner_1920x1080 text stays on screen Text
+PASS | HUD_winner_1920x1080 text fits Text
+PASS | HUD_winner_1920x1080 text stays on screen Text
+PASS | winner separates RoundInfo and WinnerLabel
+PASS | winner shows scoreboard only when requested
+PASS | HUD_countdown_1920x1080 text fits Text
+PASS | HUD_countdown_1920x1080 text stays on screen Text
+PASS | HUD_countdown_1920x1080 text fits Text
+PASS | HUD_countdown_1920x1080 text stays on screen Text
+PASS | countdown separates RoundInfo and RoundCountdown
+PASS | countdown shows scoreboard only when requested
+PASS | ESC text fits MenuTitle
+PASS | ESC text stays on screen MenuTitle
+PASS | ESC text fits Text
+PASS | ESC text stays on screen Text
+PASS | ESC text fits Text
+PASS | ESC text stays on screen Text
+PASS | ESC text fits EscapeHint
+PASS | ESC text stays on screen EscapeHint
+PASS | Scene references and actual authored dimensions verified. Render previews use CanvasScaler's equivalent width/height match; live Game View capture follows separately.
+PASS | Podium text fits PodiumTitle
+PASS | Podium text stays on screen PodiumTitle
+PASS | Podium text fits RankBadge
+PASS | Podium text stays on screen RankBadge
+PASS | Podium text fits Nickname
+PASS | Podium text stays on screen Nickname
+PASS | Podium text fits Score
+PASS | Podium text stays on screen Score
+PASS | Podium text fits RankBadge
+PASS | Podium text stays on screen RankBadge
+PASS | Podium text fits Nickname
+PASS | Podium text stays on screen Nickname
+PASS | Podium text fits Score
+PASS | Podium text stays on screen Score
+PASS | Podium text fits RankBadge
+PASS | Podium text stays on screen RankBadge
+PASS | Podium text fits Nickname
+PASS | Podium text stays on screen Nickname
+PASS | Podium text fits Score
+PASS | Podium text stays on screen Score

@@ -1,0 +1,7 @@
+ALREADY_LOOPING: Idle_ReadyPistol
+ALREADY_LOOPING: Locomotion_Forward_Walk
+ALREADY_LOOPING: Locomotion_Forward_Run
+ALREADY_LOOPING: Locomotion_Backward_Walk
+ALREADY_LOOPING: Locomotion_Strafe_Left
+ALREADY_LOOPING: Locomotion_Strafe_Right
+ALREADY_LOOPING: Aim_Idle

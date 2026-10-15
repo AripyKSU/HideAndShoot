@@ -1,0 +1,9 @@
+PREFAB NETWORK IDs and PISTOL VISUAL 2026-10-13
+PlayerAvatar GUID=760c380eaee808c48aedfcd6b6bd4449 NetworkGlobalObjectIdHash=1633530519
+PlayerAvatar world animator=True hand=Right_Wrist_Joint_01
+world gun renderer=Pistol_ProvisionalCandidate enabled=False bounds=(0.02, 0.02, 0.02) active=True
+owner gun=FPS_QuaterniusPistol enabled=True bounds=(0.05, 0.17, 0.26) active=True
+NPCActor GUID=36ab9285723d2ee42af435cc94e5e4fd NetworkGlobalObjectIdHash=1488703392
+NPCActor world animator=True hand=Right_Wrist_Joint_01
+world gun renderer=Pistol_ProvisionalCandidate enabled=False bounds=(0.02, 0.02, 0.02) active=True
+AmmoPickup GUID=1e9d6d33ceb7a1f4aa84b11b228571ef NetworkGlobalObjectIdHash=115825172

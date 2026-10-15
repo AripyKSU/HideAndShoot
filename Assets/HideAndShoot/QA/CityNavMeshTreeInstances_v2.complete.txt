@@ -1,0 +1,9 @@
+City NavMesh baked 2026-10-13 14:46:05
+NavMeshData=CityWorld_72x72_PrototypeLayout
+Scene=Assets/HideAndShoot/Scenes/GameScene.unity
+Geometry=PhysicsColliders
+OrdinaryBuildingRoofsBlocked=8
+TreeTrunksBlocked=27
+UnintendedRoofLeaks=0
+GroundSpawnAnchors=9/9
+IntentionalRooftops=NorthWestRoof_A,SouthEastRoof_B (preserved)

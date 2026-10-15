@@ -1,0 +1,3 @@
+Rebuild GameScene NavMesh with ordinary buildings and decorative tree canopies excluded as walkable surfaces.
+Preserve the two authored ramp-accessible rooftops, mark ordinary building colliders Not Walkable, and carve tree trunk footprints.
+The editor bake writes CityNavMeshGroundOnly_20261013.complete.txt after validation and scene save.

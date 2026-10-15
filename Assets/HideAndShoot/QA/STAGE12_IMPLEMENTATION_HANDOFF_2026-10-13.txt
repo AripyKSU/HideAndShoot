@@ -1,0 +1,38 @@
+HideAndShoot Stage0-11 implementation handoff (STATIC ONLY) - 2026-10-13
+Source: v1.5 integrated game design and technical specification, docs/IMPLEMENTATION_TRACKER.md
+NOTE: checks are source/asset existence and wiring assertions, not runtime behavior tests.
+
+PASS | BuildSettings exactly MenuLobby + GameScene
+PASS | NGO and URP dependencies
+PASS | Relay service integration
+PASS | NPC + Player common Kyle visuals
+PASS | Kyle FBX CPU-readable
+PASS | Kyle isolated arms mesh generated
+PASS | Kyle arms prefab instantiated
+PASS | Remote movement animation on both prefabs
+PASS | Remote aiming replicated via Host
+PASS | Solo death and ghost camera
+PASS | Late join ground spectator
+PASS | Unique player round spawns
+PASS | Host shot history 30x32
+PASS | Host historical capsule + occlusion validation
+PASS | Server-only death authority
+PASS | Final pair one-second grace
+PASS | NPC N x 8 and NavMesh
+PASS | NPC initial overlap protection
+PASS | Ammo +5 max10 and dead pickup reject
+PASS | Timed ammo 5s 1-per-tick
+PASS | Redo unanimity without scoring
+PASS | Redo single connected leads to lobby
+PASS | Host score tie breaks
+PASS | Result state/score snapshot messages
+PASS | Countdown 5s + WIN celebration 5s
+PASS | First to 3 podium + lobby
+PASS | 2 player podium third spot empty
+PASS | Victory Kyle animator state
+PASS | HUD full v1.5 data wiring
+PASS | No separate ResultScene
+
+30/30 checks matched source/serialized assets.
+Remaining: actual Unity Play, UGS/Relay integration, latency/cheat validation, 8 players + 64 NPC performance, approved wireframe UI visual assessment.
+Actual verification intentionally excluded by user until Stage 12.

@@ -1,0 +1,17 @@
+FPS RIGHT HAND / ANIMATION CODE & ASSET STATIC AUDIT 2026-10-13
+Not Unity Play QA.
+PASS | owner-only FPS rig
+PASS | RIGHT upper arm mesh selection
+PASS | right arm prefab mesh persistent installer
+PASS | right wrist bone used for gun
+PASS | gun viewport anchored by hand each LateUpdate
+PASS | first-person reload-looking clips disabled
+PASS | world Fire_Handgun 5.3s trigger no longer invoked
+PASS | no full body Aim stall while walking
+PASS | locomotion/idle FBX loop importer present
+PASS | world and remote movement remain wired
+PASS | compiled viewmodel is owner-only cull layer
+CHECKS: 11/11
+NATIVE RIGHT ARM ASSET CREATED: True
+NATIVE LOOP IMPORT AUDIT CREATED: True
+Editor Play should not be attempted until script asset import finishes.

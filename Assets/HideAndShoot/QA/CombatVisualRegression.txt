@@ -1,0 +1,15 @@
+Unity edit-mode physics and rendered visual regression
+PASS | Near wall blocks target; exact endpoint below 2m; self ignored
+PASS | Offset muzzle tracer ends at the same near-wall raycast point
+PASS | Ammo trigger ignored; capsule selected
+PASS | Empty aim uses full weapon range
+Measured pistol size=(0.046188, 0.165991, 0.260000)
+PASS | World pistol faces forward, max dimension 26cm
+Pistol local size=(0.0462, 0.1660, 0.2600)
+PASS | Pistol normalization stable across yaw and repeated setup
+Right-hand grip muscles=15
+PASS | Owner gun parented to wrist with model-derived muzzle
+PASS | Ammo box visible at 42cm and centered above floor
+PASS | Pooled ammo keeps its size after visual reset
+PASS | Reticle geometry anchored at exact viewport center
+Live multiplayer input and lag compensation require a connected play session.

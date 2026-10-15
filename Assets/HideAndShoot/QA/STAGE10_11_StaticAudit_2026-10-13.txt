@@ -1,0 +1,22 @@
+HideAndShoot Part01/06/08/10 scoreboard & podium STATIC audit (2026-10-13)
+This is not a Play Mode or 2-8-client integration test.
+PASS | Only_MenuLobbyScene_and_GameScene_enabled
+PASS | Host_score_increments_single_committed_winner
+PASS | Positive_ties_rank_by_recent_award
+PASS | Zero_ties_rank_by_lobby_join_order
+PASS | Late_joins_marked_waiting_not_round_participating
+PASS | Host_snapshot_writer_reader_registered
+PASS | Podium_message_writer_reader_registered
+PASS | Countdown_host_sends_remaining
+PASS | HUD_uses_received_host_snapshot
+PASS | HUD_active_only_reticle
+PASS | Podium_uses_world_Kyle_visual
+PASS | Podium_third_empty_if_two_players
+PASS | Podium_only_at_three_wins
+PASS | Podium_returns_to_same_room_lobby
+PASS | HUD_and_podium_installed_in_GameScene_runtime
+PASS | Existing_Kyle_controller_has_Victory_state
+PASS | No_extra_result_scene_created
+PENDING | FPS_arms_still_pending
+Static checks passing: 17/17
+Unverified: exact HUD wireframe art, 3D podium rendering, body animation, latency/race behavior.

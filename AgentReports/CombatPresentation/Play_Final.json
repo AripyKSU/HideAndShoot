@@ -1,0 +1,10 @@
+{
+  "playSessions": 1,
+  "penaltyExpired": true,
+  "spectatorSurvivesPenaltyExpiry": true,
+  "nameOccludedByWall": true,
+  "roundResetClearsReveal": true,
+  "roundResetHidesOldFeed": true,
+  "matchKillsRetained": true,
+  "scope": "Local NGO host with actual prefabs and NPCs; synthetic remote owners and host-approved hit inputs; no Relay client test"
+}

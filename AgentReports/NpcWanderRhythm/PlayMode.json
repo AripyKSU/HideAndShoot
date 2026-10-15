@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "playSessions": 1,
+  "midRoutePauses": 72,
+  "resumedSamePath": 68,
+  "npcsLookedAround": 25,
+  "maxPauseDrift": 0.0,
+  "frozenDriftAfterSettling": 0.0,
+  "pooledNpcResets": 30,
+  "note": "Initial first-half-second freeze displacement exceeded the strict 5cm threshold; no ongoing frozen movement was observed. Initial result retained in InitialFreezeCheck.json."
+}

@@ -1,0 +1,11 @@
+{
+  "frameDelta": 863,
+  "hostPenaltySeconds": 10.0,
+  "targetPenaltySeconds": 10.0,
+  "kills": 1,
+  "feed": "검증_Host -> 검증_Victim",
+  "duplicateSuppressed": true,
+  "highlightedParts": 2,
+  "warning": true,
+  "scoreboard": true
+}

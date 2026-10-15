@@ -1,0 +1,7 @@
+2026-10-13 15:13:58
+HangulSyllables=11172/11172
+Glyphs=11426
+AtlasPages=2
+SceneTMPLabels=24
+SceneTMPInputs=2
+LegacyUGUIText=0

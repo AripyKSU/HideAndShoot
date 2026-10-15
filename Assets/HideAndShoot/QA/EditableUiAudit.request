@@ -1,0 +1,1 @@
+Check every saved UI canvas and TMP component, validate menu create/leave cycles, and ensure HUD binding does not create GameObjects.

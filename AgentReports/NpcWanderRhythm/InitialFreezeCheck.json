@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "error": "System.Exception: Round freeze did not hold NPC still\r\n  at PipelineEvaluation.PipelineEval_348adabd+<>c__DisplayClass0_0.<Execute>b__0 () [0x004b6] in <0c70826a01fc4390bec094fdb45c738b>:0 ",
+  "midRoutePauses": 72,
+  "resumedSamePath": 68,
+  "looked": 25,
+  "maxPauseDrift": 0.0
+}

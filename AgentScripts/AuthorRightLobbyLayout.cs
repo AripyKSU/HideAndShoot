@@ -1,0 +1,10 @@
+if(UnityEditor.EditorApplication.isPlayingOrWillChangePlaymode)throw new System.Exception("Edit mode required; do not interrupt user play.");
+var scene=UnityEngine.SceneManagement.SceneManager.GetSceneByPath("Assets/HideAndShoot/Scenes/MenuLobbyScene.unity");
+if(!scene.IsValid() || !scene.isLoaded)throw new System.Exception("MenuLobbyScene must already be open.");
+bool hadPendingEdits=scene.isDirty;
+var ui=scene.GetRootGameObjects().SelectMany(x=>x.GetComponentsInChildren<HideAndShoot.Lobby.MenuLobbyUI>(true)).First();
+UnityEditor.Undo.RegisterFullObjectHierarchyUndo(ui.gameObject,"Group lobby controls on the right at 1366x768");
+ui.BakeRoomBrowserLayout();
+UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(scene);
+bool saved=!hadPendingEdits && UnityEditor.SceneManagement.EditorSceneManager.SaveScene(scene);
+return new { saved, preservedPendingEdits=hadPendingEdits, playing=UnityEditor.EditorApplication.isPlaying, compilationFailed=UnityEditor.EditorUtility.scriptCompilationFailed };

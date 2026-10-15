@@ -1,0 +1,1 @@
+Convert runtime-generated menu, lobby, HUD, round menu and result overlay into editable scene GameObjects. Remove old placeholder UI, preserve font and existing design.

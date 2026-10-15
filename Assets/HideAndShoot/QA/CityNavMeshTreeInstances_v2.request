@@ -1,0 +1,1 @@
+Run the final NavMesh bake after per-instance tree trunk positioning, preserving the 2 accessible ramp roofs while excluding 8 unintended building rooftops.

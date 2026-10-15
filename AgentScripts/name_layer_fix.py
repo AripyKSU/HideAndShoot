@@ -1,0 +1,6 @@
+exec(open('C:/UnityProject/HideAndShoot/AgentScripts/feature_core.py',encoding='utf-8').read().split("write('Assets/")[0])
+p='Assets/HideAndShoot/Scripts/Player/PlayerHighlightTarget.cs';s=read(p)
+s=replace(s,'go.transform.SetParent(transform,false);','go.transform.SetParent(transform,false);\n                go.layer=parts.Count>0?parts[0].Renderer.gameObject.layer:gameObject.layer;')
+s=replace(s,'            nameLabel.transform.rotation=camera.transform.rotation;','            nameLabel.transform.rotation=camera.transform.rotation;\n            if(nameLabel.havePropertiesChanged)nameLabel.ForceMeshUpdate();')
+write(p,s)
+p='AgentScripts/skinned_checks.cs';s=read(p);s=replace(s,'UnityEngine.Physics.SyncTransforms();camera.Render();','UnityEngine.Physics.SyncTransforms();camera.Render();camera.Render();');write(p,s)

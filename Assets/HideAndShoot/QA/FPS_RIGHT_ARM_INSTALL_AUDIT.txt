@@ -1,0 +1,1 @@
+Right arm triangles=1362, sourceOriginalIntact=True, prefab=Assets/HideAndShoot/Prefabs/PlayerAvatar.prefab, mesh=Assets/HideAndShoot/Animations/FPS_RightArm_0.asset

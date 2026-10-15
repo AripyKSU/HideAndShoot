@@ -1,0 +1,13 @@
+{
+  "frameAdvanced": true,
+  "countdown": true,
+  "countdownStateStable": true,
+  "startingWhistle": true,
+  "ambientStarts": true,
+  "settlement": true,
+  "probeGrounded": true,
+  "walkFootsteps": true,
+  "runFootsteps": true,
+  "lockedSilent": true,
+  "stationarySilent": true
+}

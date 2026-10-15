@@ -1,0 +1,64 @@
+Gameplay fix verification, connected Unity Editor
+PASS | Checks run without changing Play mode or network sessions
+PASS | NPCActor cycle 0: corpse enters Death and disables hitbox
+PASS | NPCActor cycle 0: active revive restores locomotion and hitbox
+PASS | NPCActor cycle 1: corpse enters Death and disables hitbox
+PASS | NPCActor cycle 1: inactive revive restores locomotion and hitbox
+PASS | NPCActor cycle 2: corpse enters Death and disables hitbox
+PASS | NPCActor cycle 2: active revive restores locomotion and hitbox
+PASS | NPCActor cycle 3: corpse enters Death and disables hitbox
+PASS | NPCActor cycle 3: inactive revive restores locomotion and hitbox
+PASS | NPCActor cycle 4: corpse enters Death and disables hitbox
+PASS | NPCActor cycle 4: active revive restores locomotion and hitbox
+PASS | NPCActor cycle 5: corpse enters Death and disables hitbox
+PASS | NPCActor cycle 5: inactive revive restores locomotion and hitbox
+PASS | NPCActor cycle 6: corpse enters Death and disables hitbox
+PASS | NPCActor cycle 6: active revive restores locomotion and hitbox
+PASS | NPCActor cycle 7: corpse enters Death and disables hitbox
+PASS | NPCActor cycle 7: inactive revive restores locomotion and hitbox
+PASS | NPCActor: controller alone exits Death when Dead clears
+PASS | PlayerAvatar cycle 0: corpse enters Death and disables hitbox
+PASS | PlayerAvatar cycle 0: active revive restores locomotion and hitbox
+PASS | Player corpse renderers restored on revive
+PASS | PlayerAvatar cycle 1: corpse enters Death and disables hitbox
+PASS | PlayerAvatar cycle 1: inactive revive restores locomotion and hitbox
+PASS | Player corpse renderers restored on revive
+PASS | PlayerAvatar cycle 2: corpse enters Death and disables hitbox
+PASS | PlayerAvatar cycle 2: active revive restores locomotion and hitbox
+PASS | Player corpse renderers restored on revive
+PASS | PlayerAvatar cycle 3: corpse enters Death and disables hitbox
+PASS | PlayerAvatar cycle 3: inactive revive restores locomotion and hitbox
+PASS | Player corpse renderers restored on revive
+PASS | PlayerAvatar cycle 4: corpse enters Death and disables hitbox
+PASS | PlayerAvatar cycle 4: active revive restores locomotion and hitbox
+PASS | Player corpse renderers restored on revive
+PASS | PlayerAvatar cycle 5: corpse enters Death and disables hitbox
+PASS | PlayerAvatar cycle 5: inactive revive restores locomotion and hitbox
+PASS | Player corpse renderers restored on revive
+PASS | PlayerAvatar cycle 6: corpse enters Death and disables hitbox
+PASS | PlayerAvatar cycle 6: active revive restores locomotion and hitbox
+PASS | Player corpse renderers restored on revive
+PASS | PlayerAvatar cycle 7: corpse enters Death and disables hitbox
+PASS | PlayerAvatar cycle 7: inactive revive restores locomotion and hitbox
+PASS | Player corpse renderers restored on revive
+PASS | PlayerAvatar: controller alone exits Death when Dead clears
+PASS | (1280, 720) 0 / 10: glyphs fit inside text rectangle (125.0589 / 172)
+PASS | (1280, 720) 0 / 10: ammo stays on screen
+PASS | (1280, 720) 9 / 10: glyphs fit inside text rectangle (125.0589 / 172)
+PASS | (1280, 720) 9 / 10: ammo stays on screen
+PASS | (1280, 720) 10 / 10: glyphs fit inside text rectangle (146.2053 / 172)
+PASS | (1280, 720) 10 / 10: ammo stays on screen
+PASS | (1366, 768) 0 / 10: glyphs fit inside text rectangle (125.0589 / 172)
+PASS | (1366, 768) 0 / 10: ammo stays on screen
+PASS | (1366, 768) 9 / 10: glyphs fit inside text rectangle (125.0589 / 172)
+PASS | (1366, 768) 9 / 10: ammo stays on screen
+PASS | (1366, 768) 10 / 10: glyphs fit inside text rectangle (146.2053 / 172)
+PASS | (1366, 768) 10 / 10: ammo stays on screen
+PASS | (1920, 1080) 0 / 10: glyphs fit inside text rectangle (125.0589 / 172)
+PASS | (1920, 1080) 0 / 10: ammo stays on screen
+PASS | (1920, 1080) 9 / 10: glyphs fit inside text rectangle (125.0589 / 172)
+PASS | (1920, 1080) 9 / 10: ammo stays on screen
+PASS | (1920, 1080) 10 / 10: glyphs fit inside text rectangle (146.2053 / 172)
+PASS | (1920, 1080) 10 / 10: ammo stays on screen
+PASS | Arena ambience clip resolves from Resources
+Audio target changed from 0.18 to 0.36 (2x gain); listening and multiplayer transport require a live match.

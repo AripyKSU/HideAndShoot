@@ -1,0 +1,16 @@
+HideAndShoot FIRST PLAYTEST 9 ISSUES: STATIC SOURCE/ASSET CHECKS ONLY
+2026-10-13
+
+PASS | 01 bad room connection bounded
+PASS | 02 room copy/header no wrap
+PASS | 03 leave button entire label
+PASS | 04 FPS lower right hand mount
+PASS | 05 owner remote + 1P movement anim
+PASS | 06 actual FPS pistol runtime resource
+PASS | 07 hide corpse on ghost transition
+PASS | 08 FPS viewmodel owner-only
+PASS | 09 old static HUD removed and all backgrounds hidden
+
+9/9 check conditions matched.
+This is NOT a Unity Play / rendered UI / multiplayer QA success report.
+Unity Editor must import changed scripts/resources and first-person layout must be visually retested.

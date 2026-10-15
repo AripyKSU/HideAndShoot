@@ -1,0 +1,8 @@
+{
+  "gunClip": "Pistol",
+  "gunVolume": 0.38,
+  "installerUsesNewClip": true,
+  "scene": "Assets/HideAndShoot/Scenes/MenuLobbyScene.unity",
+  "dirty": false,
+  "playing": false
+}

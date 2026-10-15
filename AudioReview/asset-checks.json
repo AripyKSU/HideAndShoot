@@ -1,0 +1,83 @@
+[
+  {
+    "clip": "Ambience",
+    "seconds": 227.0,
+    "sampleRate": 48000,
+    "channels": 2,
+    "peak": 0.55,
+    "rms": 0.0322,
+    "finite": true
+  },
+  {
+    "clip": "Cheer",
+    "seconds": 2.85,
+    "sampleRate": 44100,
+    "channels": 1,
+    "peak": 0.45,
+    "rms": 0.0414,
+    "finite": true
+  },
+  {
+    "clip": "Countdown",
+    "seconds": 0.32,
+    "sampleRate": 44100,
+    "channels": 1,
+    "peak": 0.42,
+    "rms": 0.1722,
+    "finite": true
+  },
+  {
+    "clip": "LobbyMusic",
+    "seconds": 121.0,
+    "sampleRate": 44100,
+    "channels": 2,
+    "peak": 0.7,
+    "rms": 0.1417,
+    "finite": true
+  },
+  {
+    "clip": "Pistol",
+    "seconds": 0.48,
+    "sampleRate": 44100,
+    "channels": 1,
+    "peak": 0.55,
+    "rms": 0.0381,
+    "finite": true
+  },
+  {
+    "clip": "Reload",
+    "seconds": 0.7,
+    "sampleRate": 44100,
+    "channels": 1,
+    "peak": 0.4,
+    "rms": 0.0245,
+    "finite": true
+  },
+  {
+    "clip": "RobotStep",
+    "seconds": 0.23,
+    "sampleRate": 44100,
+    "channels": 1,
+    "peak": 0.33,
+    "rms": 0.0261,
+    "finite": true
+  },
+  {
+    "clip": "UI",
+    "seconds": 0.2,
+    "sampleRate": 44100,
+    "channels": 1,
+    "peak": 0.32,
+    "rms": 0.0309,
+    "finite": true
+  },
+  {
+    "clip": "Whistle",
+    "seconds": 0.58,
+    "sampleRate": 44100,
+    "channels": 1,
+    "peak": 0.42,
+    "rms": 0.0838,
+    "finite": true
+  }
+]

@@ -1,0 +1,2 @@
+2026-10-13 10:58:38
+FAIL: Host scene switched but client-side confirmation signal timed out.
