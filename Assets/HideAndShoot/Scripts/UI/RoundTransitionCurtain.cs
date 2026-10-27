@@ -31,7 +31,9 @@ namespace HideAndShoot.UI
         {
             if(curtain==null)return;
             var session=RelayLobbySession.Instance;
+            var maps=FindFirstObjectByType<StageMapDirector>();
             bool placed=session!=null && session.MatchRoundId>=expectedRound &&
+                maps!=null && maps.SelectionRound>=session.MatchRoundId && maps.SelectedMapIndex>=0 &&
                 (session.MatchPhase==(int)HostRoundSetupCoordinator.HostPhase.Active ||
                  session.MatchPhase==(int)HostRoundSetupCoordinator.HostPhase.Result ||
                  session.MatchPhase==(int)HostRoundSetupCoordinator.HostPhase.Podium);

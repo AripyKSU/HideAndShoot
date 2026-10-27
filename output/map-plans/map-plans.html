@@ -1,0 +1,81 @@
+<div id="hs-plans">
+<style>
+#hs-plans .map {width:100%} #hs-plans .map svg,#hs-plans .section {display:block;width:100%;overflow:visible} #hs-plans svg text {fill:var(--foreground);font-weight:400} #hs-plans section {margin-bottom:24px} #hs-plans .legend {display:flex;flex-wrap:wrap;gap:6px 16px;margin:12px 0} #hs-plans .detail {margin:10px 0;min-height:2em}
+</style>
+<section>
+<h3>도시 순환도로 · 72 × 72m</h3>
+<div class="map" data-map="city"></div>
+<div class="legend text-small"><span>①–⑨ 지상 스폰 · 짧은 선 = 시선</span><span>↗ 경사로</span><span>■ 시야 차단 엄폐</span><span>◇ 아이템 후보</span></div>
+<label class="form-label">스폰 선택<select class="form-select" data-select="city" aria-label="도시 스폰 선택"></select></label>
+<div class="detail text-small" data-detail="city" aria-live="polite"></div>
+<svg class="section" data-section="city" role="img" aria-label="지상 도로에서 경사로를 올라 높이 4m 외곽 도로에 진입하는 단면"></svg>
+</section>
+<hr>
+<section>
+<h3>화성 전초기지 · 72 × 72m</h3>
+<div class="map" data-map="mars"></div>
+<div class="legend text-small"><span>①–⑨ 지상 스폰 · 짧은 선 = 시선</span><span>↗ 경사로</span><span>■ 암석·화물 엄폐</span><span>◇ 아이템 후보</span><span>┄ 모노레일 장식</span></div>
+<label class="form-label">스폰 선택<select class="form-select" data-select="mars" aria-label="화성 스폰 선택"></select></label>
+<div class="detail text-small" data-detail="mars" aria-live="polite"></div>
+<svg class="section" data-section="mars" role="img" aria-label="높이 3m 북쪽 기지, 지상 0m, 깊이 1.5m 채굴장, 높이 2m 착륙장 단면"></svg>
+</section>
+</div>
+<script>
+(() => {
+ const root=document.getElementById('hs-plans'), ns='http://www.w3.org/2000/svg';
+ const C={fg:'var(--foreground)',line:'var(--border)',ground:'var(--muted)',road:'var(--secondary)',building:'var(--card)',spawn:'var(--viz-series-1)',ramp:'var(--viz-series-2)',high:'var(--viz-series-3)',soil:'var(--orange)'};
+ const S={
+ city:[[-24,24,135,'북서 물류 포켓','남쪽 골목 / 동쪽 도로'],[-8,19,180,'북쪽 정류장 뒤','서쪽 코너 / 중앙 건물 북측'],[24,24,225,'북동 작업장 뒤','서쪽 도로 / 남쪽 골목'],[-24,6,90,'서쪽 하역 포켓','북쪽 도로 / 남쪽 도로'],[-13,-6,180,'중앙 건물 서비스 포켓','북쪽 보행로 / 남쪽 보행로'],[24,-6,270,'동쪽 설비 포켓','북쪽 도로 / 남쪽 도로'],[-24,-24,45,'남서 컨테이너 뒤','북쪽 골목 / 동쪽 도로'],[0,-18,0,'남쪽 정류장 뒤','서쪽 도로 / 동쪽 도로'],[24,-24,315,'남동 창고 포켓','북쪽 골목 / 서쪽 도로']],
+ mars:[[-28,25,135,'북서 암석 포켓','남쪽 격납고 뒤 / 동쪽 북측 길'],[-3,16,180,'북쪽 발전기 뒤','서쪽 기지 길 / 동쪽 로켓 접근로'],[28,17,225,'북동 화물 포켓','서쪽 길 / 남쪽 연구동 뒤'],[-28,-4,90,'서쪽 격납고 남측','북쪽 격납고 측면 / 남쪽 암석 길'],[-14,-8,180,'중서부 채굴 화물 뒤','서쪽 순환로 / 동쪽 분화구 남측'],[28,-8,270,'동쪽 연구동 남측','북쪽 연구동 측면 / 남쪽 통신소'],[-26,-26,45,'남서 탐사차 포켓','북쪽 암석 길 / 동쪽 착륙장'],[0,-16,0,'남쪽 보급 화물 뒤','서쪽 분화구 길 / 동쪽 연구동 길'],[29,-26,315,'남동 통신소 뒤','북쪽 연구동 길 / 서쪽 착륙장']]};
+ const A={city:[[-19,8,0],[-19,-12,0],[19,12,0],[19,-10,0],[-8,17,0],[8,-19,0],[-13,7,0],[13,-7,0],[-25,25,0],[25,25,0],[-25,-25,0],[25,-25,0],[-15,30,4],[15,30,4],[-15,-30,4],[15,-30,4]],mars:[[-28,17,0],[-21,0,0],[-22,-16,0],[-13,9,0],[8,14,0],[30,7,0],[20,-13,0],[16,-28,0],[-21,-25,0],[-5,-15,0],[-6,0,-1.5],[6,0,-1.5],[-8,27,3],[24,27,3],[-5,-24,2],[4,-24,2]]};
+ const selected={city:0,mars:0};
+ function restore(s){if(!s)return;['city','mars'].forEach(k=>{if(Number.isInteger(s[k])&&s[k]>=0&&s[k]<9)selected[k]=s[k]});}
+ restore(window.openai?.widgetState?.privateContent);
+ function node(parent,tag,a={},text){const n=document.createElementNS(ns,tag);Object.entries(a).forEach(([k,v])=>n.setAttribute(k,v));if(text!==undefined)n.textContent=text;parent.appendChild(n);return n;}
+ function draw(k){
+  const area=root.querySelector(`[data-map="${k}"]`),w=Math.max(280,area.clientWidth),p=22,s=(w-p*2)/72,x=v=>p+(v+36)*s,y=v=>p+(36-v)*s;
+  area.replaceChildren();const svg=node(area,'svg',{viewBox:`0 0 ${w} ${w+34}`,role:'img','aria-label':k==='city'?'중앙 대형 건물을 둘러싼 지상 순환도로와 네 경사로로 연결된 외곽 고지 도로, 지상 스폰 9곳':'북쪽 로켓 기지와 서쪽 격납고, 동쪽 연구동, 중앙 채굴장, 남쪽 착륙장, 지상 스폰 9곳'});
+  const rect=(a,b,c,d,fill=C.building,extra={})=>node(svg,'rect',{x:x(a),y:y(b+d),width:c*s,height:d*s,fill,stroke:C.line,'stroke-width':1,...extra});
+  const line=(pts,stroke=C.line,width=1,extra={})=>node(svg,'polyline',{points:pts.map(t=>`${x(t[0])},${y(t[1])}`).join(' '),fill:'none',stroke,'stroke-width':width,'stroke-linejoin':'round',...extra});
+  const label=(a,b,t,extra={})=>node(svg,'text',{x:x(a),y:y(b),'text-anchor':'middle','dominant-baseline':'middle',...extra},t);
+  const cover=(a,b,c=3,d=2)=>rect(a,b,c,d,C.fg,{'fill-opacity':.65,'data-tooltip':'높이 2.4~3.5m 시야 차단 엄폐 · 옆 통행 확보'});
+  const ramp=(a,b,c,d,arrow,tip)=>{rect(a,b,c,d,C.ramp,{'fill-opacity':.30,'data-tooltip':tip});label(a+c/2,b+d/2,arrow);};
+  rect(-36,-36,72,72,C.ground);
+  [-24,-12,0,12,24].forEach(v=>{line([[v,-36],[v,36]],C.line,.5);line([[-36,v],[36,v]],C.line,.5)});
+  if(k==='city'){
+   node(svg,'path',{d:`M${x(-33)},${y(33)}H${x(33)}V${y(-33)}H${x(-33)}Z M${x(-27)},${y(27)}V${y(-27)}H${x(27)}V${y(27)}Z`,fill:C.high,'fill-rule':'evenodd','fill-opacity':.22,stroke:C.line,'stroke-width':1,'data-tooltip':'외곽 고지 도로 +4m · 폭 6m · 연속 순환 · 안쪽 가림벽으로 전역 감시 제한'});
+   line([[-19,-19],[-19,19],[19,19],[19,-19],[-19,-19]],C.road,8*s);
+   line([[-19,-19],[-19,19],[19,19],[19,-19],[-19,-19]],C.fg,1,{'stroke-opacity':.3,'stroke-dasharray':'6 8'});
+   rect(-10,-10,20,20,C.building,{stroke:C.fg,'data-tooltip':'중앙 복합 산업 건물 · 20×20m · 높이 10m · 외부 우회 동선 · 내부/옥상은 비플레이 영역'});
+   label(0,2,w<420?'대형 건물':'중앙 대형 건물');label(0,-2,'20 × 20m',{class:'text-small'});
+   ramp(-2,22,4,8,'↑','북측: 길이 8m · 폭 4m · 상승 4m');ramp(-2,-30,4,8,'↓','남측: 길이 8m · 폭 4m · 상승 4m');ramp(-30,-2,8,4,'←','서측: 길이 8m · 폭 4m · 상승 4m');ramp(22,-2,8,4,'→','동측: 길이 8m · 폭 4m · 상승 4m');
+   ramp(-15,9,3,6,'↑','북서 작업대: 길이 6m · 상승 1.2m');rect(-15,15,5,3,C.high,{'fill-opacity':.25});ramp(12,-15,3,6,'↓','남동 작업대: 길이 6m · 상승 1.2m');rect(10,-18,5,3,C.high,{'fill-opacity':.25});
+   [[-28,20,7,2],[-7,21,5,2],[21,20,7,2],[-27,4,2,5],[-14,-4,2,5],[25,-9,2,5],[-28,-23,7,2],[3,-22,4,2],[21,-23,7,2],[-21,9,4,2],[17,-13,4,2],[-23,27,7,1],[16,27,7,1],[-23,-28,7,1],[16,-28,7,1],[-28,12,1,6],[27,-18,1,6]].forEach(a=>cover(...a));
+   if(w>=450){label(13,30,'외곽 +4m',{class:'text-small'});label(0,-13,'지상 순환도로 · 폭 8m',{class:'text-small'});}
+  }else{
+   rect(-36,-36,72,72,C.soil,{'fill-opacity':.10});rect(-16,22,48,12,C.high,{'fill-opacity':.22,'data-tooltip':'북쪽 기지 고지 +3m · 두 경사로 · 암석으로 사선 분할'});
+   line([[-28,17],[-17,17],[-12,10],[-12,-12],[0,-14],[12,-12],[30,-12],[30,14],[12,16],[-3,16],[-17,17]],C.fg,4*s,{'stroke-opacity':.1});
+   line([[-28,-26],[-22,-14],[-31,0],[-31,20]],C.fg,4*s,{'stroke-opacity':.1});line([[26,-26],[16,-16],[12,-12]],C.fg,4*s,{'stroke-opacity':.1});
+   node(svg,'ellipse',{cx:x(0),cy:y(1),rx:10*s,ry:9*s,fill:C.soil,'fill-opacity':.2,stroke:C.line,'data-tooltip':'중앙 채굴장 · 바닥 -1.5m · 남북 경사로로 출입 · 중앙 암석으로 직선 시야 차단'});
+   rect(-29,3,14,12,C.building,{stroke:C.fg,'data-tooltip':'격납고 14×12m · 지상 · 외부 양측 통행 · 실내는 1차 구현에서 제외'});rect(13,-6,14,12,C.building,{stroke:C.fg,'data-tooltip':'연구동 14×12m · 모듈 조합 · 지상 시야 차단'});
+   rect(-10,-29,16,10,C.high,{'fill-opacity':.22,'data-tooltip':'착륙장 16×10m · 높이 +2m · 양옆 경사로'});rect(19,-27,7,6,C.building,{'data-tooltip':'통신소 · 위성 접시 · 지상 설비'});
+   node(svg,'circle',{cx:x(13),cy:y(27),r:4.2*s,fill:C.building,stroke:C.fg});label(13,27,'로켓');label(-22,9,'격납고');label(20,0,'연구동');label(0,1,'채굴장',{class:'text-small'});label(-2,-24,'착륙장',{class:'text-small'});
+   ramp(-12,10,4,12,'↑','서측 기지 경사로 12m · 폭 4m · +3m');ramp(22,10,4,12,'↑','동측 기지 경사로 12m · 폭 4m · +3m');ramp(-2,10,4,6,'↓','채굴장 북측 경사로 6m · -1.5m');ramp(-2,-14,4,6,'↑','채굴장 남측 경사로 6m · -1.5m');ramp(-18,-26,8,4,'→','착륙장 서측 경사로 8m · +2m');ramp(6,-26,8,4,'←','착륙장 동측 경사로 8m · +2m');
+   [[-31,21,6,2],[-6,18,6,2],[26,19,4,2],[-31,-2,6,2],[-16,-6,4,2],[26,-6,4,2],[-28,-24,5,2],[-7,-12,4,2],[25,-24,5,2],[-5,4,4,3],[3,-5,4,3],[-31,-16,5,3],[6,20,5,2],[-8,22,5,2],[19,22,5,2]].forEach(a=>cover(...a));
+   line([[-31,30],[-22,28],[-10,27],[0,24],[6,30]],C.fg,2,{'stroke-dasharray':'4 3','data-tooltip':'모노레일 +6m · 비플레이 배경 장식 · 보행 연결 없음'});
+   if(w>=450){label(-3,32,'기지 +3m',{class:'text-small'});label(22,-23,'통신소',{class:'text-small'});label(-25,-17,'암석 우회로',{class:'text-small'});}
+  }
+  A[k].forEach((a,i)=>{const cx=x(a[0]),cy=y(a[1]),r=3.5;node(svg,'polygon',{points:`${cx},${cy-r} ${cx+r},${cy} ${cx},${cy+r} ${cx-r},${cy}`,fill:C.ground,stroke:C.fg,'data-tooltip':`아이템 후보 ${i+1}: X${a[0]}, 바닥 Y${a[2]}, Z${a[1]}m · 탄약/탐지 공용`});});
+  S[k].forEach((a,i)=>{const cx=x(a[0]),cy=y(a[1]),r=w<400?9:12,t=a[2]*Math.PI/180,dx=Math.sin(t),dy=-Math.cos(t);if(i===selected[k])node(svg,'circle',{cx,cy,r:r+4,fill:'none',stroke:C.spawn,'stroke-width':2});node(svg,'circle',{cx,cy,r,fill:C.spawn,'fill-opacity':.20,stroke:C.spawn,'data-tooltip':`P${i+1}: ${a[3]} · (${a[0]},0.2,${a[1]})m · ${a[2]}°`});node(svg,'text',{x:cx,y:cy+.5,'text-anchor':'middle','dominant-baseline':'middle'},String(i+1));node(svg,'line',{x1:cx+dx*(r+2),y1:cy+dy*(r+2),x2:cx+dx*(r+8),y2:cy+dy*(r+8),stroke:C.spawn,'stroke-width':2});});
+  label(-36,38,'−36',{'text-anchor':'start',class:'text-small'});label(0,38,'북 · +Z',{class:'text-small'});label(36,38,'+36',{'text-anchor':'end',class:'text-small'});label(-36,-39,'서 −X',{'text-anchor':'start',class:'text-small'});label(0,-39,w<400?'12m 격자':'중앙 (0,0) · 12m 격자',{class:'text-small'});label(36,-39,'+X 동',{'text-anchor':'end',class:'text-small'});
+  line([[-36,-42],[-24,-42]],C.fg,2);label(-22,-42,'12m',{'text-anchor':'start',class:'text-small'});
+  const a=S[k][selected[k]];root.querySelector(`[data-detail="${k}"]`).textContent=`P${selected[k]+1} · ${a[3]} · (X,Y,Z) = (${a[0]}, 0.2, ${a[1]})m · 시선 ${a[2]}° · 출구: ${a[4]}`;
+  const sec=root.querySelector(`[data-section="${k}"]`);sec.replaceChildren();sec.setAttribute('viewBox',`0 0 ${w} 110`);const b=16,span=w-32,pts=k==='city'?[[0,76],[.28,76],[.53,35],[1,35]]:[[0,35],[.18,35],[.34,64],[.42,64],[.49,86],[.59,86],[.66,64],[.76,64],[.88,45],[1,45]];
+  node(sec,'polyline',{points:pts.map(a=>`${b+a[0]*span},${a[1]}`).join(' '),fill:'none',stroke:C.fg,'stroke-width':2});
+  const st=(u,v,t)=>node(sec,'text',{x:b+u*span,y:v,'text-anchor':'middle',class:'text-small'},t);
+  if(k==='city'){st(.14,100,'지상 0m');st(.40,27,'8m 경사로');st(.40,100,'약 27°');st(.77,23,'외곽 +4m');}else{st(.12,23,'기지 +3m');st(.37,54,'0m');st(.54,105,'−1.5m');st(.91,33,'착륙장 +2m');}
+ }
+ ['city','mars'].forEach(k=>{const select=root.querySelector(`[data-select="${k}"]`);S[k].forEach((a,i)=>{const o=document.createElement('option');o.value=i;o.textContent=`P${i+1} · ${a[3]}`;select.appendChild(o)});select.value=selected[k];select.addEventListener('change',()=>{selected[k]=Number(select.value);draw(k);window.openai?.setWidgetState?.({modelContent:{citySpawn:selected.city+1,marsSpawn:selected.mars+1},privateContent:{...selected}})?.catch(()=>{});});new ResizeObserver(()=>draw(k)).observe(root.querySelector(`[data-map="${k}"]`));draw(k);});
+ window.addEventListener('openai:set_globals',event=>{restore(event.detail?.globals?.widgetState?.privateContent);['city','mars'].forEach(k=>{root.querySelector(`[data-select="${k}"]`).value=selected[k];draw(k)});});
+})();
+</script>

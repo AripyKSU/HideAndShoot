@@ -24,6 +24,7 @@ namespace HideAndShoot.Player
         private readonly List<DrawPart> parts=new List<DrawPart>();
         private HostPlayerLife life;
         private PistolCombatController pistol;
+        private PlayerDetectionVision vision;
         private Transform head;
         private TextMeshPro nameLabel;
         private Material nameMaterial;
@@ -36,6 +37,7 @@ namespace HideAndShoot.Player
         private void Awake()
         {
             life=GetComponent<HostPlayerLife>();pistol=GetComponent<PistolCombatController>();
+            vision=GetComponent<PlayerDetectionVision>();
             var body=transform.Find("WorldVisual");
             if(body==null)return;
             var animator=body.GetComponentInChildren<Animator>(true);
@@ -84,6 +86,12 @@ namespace HideAndShoot.Player
             destination.Clear();
             bool spectator=IsSpectator(camera);
             var session=RelayLobbySession.Instance;
+            bool detection=false;
+            if(!spectator && session!=null && session.MatchPhase==(int)HostRoundSetupCoordinator.HostPhase.Active)
+                foreach(var observer in targets)
+                    if(observer.life!=null && observer.life.IsOwner && observer.pistol!=null &&
+                       observer.pistol.RoundId.Value==session.MatchRoundId && observer.vision!=null &&
+                       observer.vision.CanSeePlayers(camera)){detection=true;break;}
             foreach(var target in targets)
             {
                 bool draw=false;
@@ -96,7 +104,8 @@ namespace HideAndShoot.Player
                         session.MatchPhase!=(int)HostRoundSetupCoordinator.HostPhase.Result))continue;
                     if(target.life==null || !target.life.IsSpawned || target.life.IsDead.Value || target.life.IsOwner ||
                         target.pistol==null || target.pistol.RoundId.Value!=session.MatchRoundId)continue;
-                    draw=spectator || target.life.RevealSecondsRemaining>0d;
+                    // Union the reasons once; expiry of one reason never clears another.
+                    draw=spectator || detection || target.life.RevealSecondsRemaining>0d;
                 }
                 if(!draw)continue;
                 foreach(var part in target.parts)

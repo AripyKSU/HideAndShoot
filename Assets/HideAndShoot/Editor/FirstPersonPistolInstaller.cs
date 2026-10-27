@@ -69,10 +69,8 @@ namespace HideAndShoot.EditorTools
                     "Assets/HideAndShoot/Materials/AmmoPickup_SubtleEmission.mat");
                 if(material!=null)
                 {
-                    material.EnableKeyword("_EMISSION");
-                    material.SetColor("_EmissionColor",new Color(.07f,.35f,.40f));
-                    EditorUtility.SetDirty(material);
-                    foreach(var renderer in ammo.GetComponentsInChildren<Renderer>(true))
+                    // Preserve the authored ammo palette; the separate shell owns the glow.
+                    foreach(var renderer in ammo.transform.Find("AmmoBoxVisual").GetComponentsInChildren<Renderer>(true))
                     {
                         renderer.enabled=true;
                         var materials=renderer.sharedMaterials;

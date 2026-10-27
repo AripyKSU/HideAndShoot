@@ -1,0 +1,60 @@
+{
+  "maps": [
+    {
+      "index": 0,
+      "Name": "기존 도시",
+      "spawns": 9,
+      "items": 16,
+      "blocked": [],
+      "missing": [],
+      "disconnected": [],
+      "badItems": [],
+      "badRamps": [],
+      "ramps": 0,
+      "shaders": [
+        "Universal Render Pipeline/Lit"
+      ],
+      "vertices": 1156
+    },
+    {
+      "index": 1,
+      "Name": "도시 순환도로",
+      "spawns": 9,
+      "items": 16,
+      "blocked": [],
+      "missing": [],
+      "disconnected": [],
+      "badItems": [],
+      "badRamps": [],
+      "ramps": 6,
+      "shaders": [
+        "Universal Render Pipeline/Lit"
+      ],
+      "vertices": 1490
+    },
+    {
+      "index": 2,
+      "Name": "화성 전초기지",
+      "spawns": 9,
+      "items": 16,
+      "blocked": [],
+      "missing": [],
+      "disconnected": [],
+      "badItems": [],
+      "badRamps": [],
+      "ramps": 6,
+      "shaders": [
+        "Universal Render Pipeline/Lit"
+      ],
+      "vertices": 1090
+    }
+  ],
+  "randomDraws": [
+    1920,
+    1989,
+    2091
+  ],
+  "repeatedMapsAllowed": true,
+  "errors": [],
+  "scope": "Edit mode collider/NavMesh/spawn validation and captures; no runtime network test in this report"
+}

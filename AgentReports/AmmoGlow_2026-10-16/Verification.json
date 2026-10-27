@@ -1,0 +1,24 @@
+{
+  "scope": "Connected Unity Editor, local host Play mode on real GameScene; no external clients",
+  "date": "2026-10-16",
+  "shader": "HideAndShoot/Items/PickupGlow",
+  "shaderErrors": 0,
+  "pointLights": 0,
+  "ammoBefore": 5,
+  "ammoAfter": 10,
+  "collectionPassed": true,
+  "pooledInstanceReused": true,
+  "hdr": true,
+  "bloomThreshold": 0.95,
+  "bloomIntensity": 0.7,
+  "surfaceEmission": 1.8,
+  "rimStrength": 8,
+  "captures": [
+    "AmmoGlow_Close.png",
+    "AmmoGlow_Gameplay.png"
+  ],
+  "newItem": "Deferred; purple concept, existing occlusion rule retained",
+  "notes": "Existing editor auto-installers emit local-scenario name-conflict errors and an edit-scene API exception around Play mode transitions. No pickup gameplay or shader errors observed. Material glow now uses _GlowColor independently of the legacy _EmissionColor installer.",
+  "legacyEmissionOverrideIsolated": true,
+  "blueGlowPreservedAfterPlayMode": true
+}

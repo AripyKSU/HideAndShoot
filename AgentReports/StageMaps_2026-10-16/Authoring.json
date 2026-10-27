@@ -1,0 +1,21 @@
+{
+  "maps": [
+    {
+      "Name": "기존 도시",
+      "models": 55,
+      "spawns": 9
+    },
+    {
+      "Name": "도시 순환도로",
+      "models": 201,
+      "spawns": 9
+    },
+    {
+      "Name": "화성 전초기지",
+      "models": 84,
+      "spawns": 9
+    }
+  ],
+  "scene": "Assets/HideAndShoot/Scenes/GameScene.unity",
+  "existingWorldPreserved": true
+}

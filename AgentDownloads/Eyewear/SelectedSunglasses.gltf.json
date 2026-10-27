@@ -1,0 +1,264 @@
+{
+"asset": {
+"generator": "FBX2glTF v0.9.7",
+"version": "2.0"
+},
+"scene": 0,
+"buffers": [
+{
+"byteLength": 36400
+}
+],
+"bufferViews": [
+{
+"buffer": 0,
+"byteLength": 5040,
+"byteOffset": 0,
+"target": 34963
+},
+{
+"buffer": 0,
+"byteLength": 10752,
+"byteOffset": 5040,
+"target": 34962
+},
+{
+"buffer": 0,
+"byteLength": 10752,
+"byteOffset": 15792,
+"target": 34962
+},
+{
+"buffer": 0,
+"byteLength": 7168,
+"byteOffset": 26544,
+"target": 34962
+},
+{
+"buffer": 0,
+"byteLength": 384,
+"byteOffset": 33712,
+"target": 34963
+},
+{
+"buffer": 0,
+"byteLength": 864,
+"byteOffset": 34096,
+"target": 34962
+},
+{
+"buffer": 0,
+"byteLength": 864,
+"byteOffset": 34960,
+"target": 34962
+},
+{
+"buffer": 0,
+"byteLength": 576,
+"byteOffset": 35824,
+"target": 34962
+}
+],
+"scenes": [
+{
+"name": "Root Scene",
+"nodes": [
+0
+]
+}
+],
+"accessors": [
+{
+"componentType": 5123,
+"type": "SCALAR",
+"count": 2520,
+"bufferView": 0,
+"byteOffset": 0
+},
+{
+"componentType": 5126,
+"type": "VEC3",
+"count": 896,
+"bufferView": 1,
+"byteOffset": 0,
+"min": [
+-0.0102988444268703,
+-0.00275515159592032,
+-0.0145557103678584
+],
+"max": [
+0.0102988462895155,
+0.00191367184743285,
+0.00336038041859865
+]
+},
+{
+"componentType": 5126,
+"type": "VEC3",
+"count": 896,
+"bufferView": 2,
+"byteOffset": 0
+},
+{
+"componentType": 5126,
+"type": "VEC2",
+"count": 896,
+"bufferView": 3,
+"byteOffset": 0
+},
+{
+"componentType": 5123,
+"type": "SCALAR",
+"count": 192,
+"bufferView": 4,
+"byteOffset": 0
+},
+{
+"componentType": 5126,
+"type": "VEC3",
+"count": 72,
+"bufferView": 5,
+"byteOffset": 0,
+"min": [
+-0.00907214544713497,
+-0.00212760013528168,
+0.00164243869949132
+],
+"max": [
+0.00907214637845755,
+0.00182409584522247,
+0.00327288801781833
+]
+},
+{
+"componentType": 5126,
+"type": "VEC3",
+"count": 72,
+"bufferView": 6,
+"byteOffset": 0
+},
+{
+"componentType": 5126,
+"type": "VEC2",
+"count": 72,
+"bufferView": 7,
+"byteOffset": 0
+}
+],
+"samplers": [
+{}
+],
+"materials": [
+{
+"name": "black",
+"alphaMode": "OPAQUE",
+"extras": {
+"fromFBX": {
+"shadingModel": "Phong",
+"isTruePBR": false
+}
+},
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+0.0,
+0.0,
+0.0,
+1.0
+],
+"metallicFactor": 0.400000005960464,
+"roughnessFactor": 1.0
+}
+},
+{
+"name": "Material.012",
+"alphaMode": "OPAQUE",
+"extras": {
+"fromFBX": {
+"shadingModel": "Phong",
+"isTruePBR": false
+}
+},
+"pbrMetallicRoughness": {
+"baseColorFactor": [
+0.800000011920929,
+0.800000011920929,
+0.800000011920929,
+1.0
+],
+"metallicFactor": 0.400000005960464,
+"roughnessFactor": 0.272165536880493
+}
+}
+],
+"meshes": [
+{
+"name": "glasses12.001",
+"primitives": [
+{
+"material": 0,
+"mode": 4,
+"attributes": {
+"NORMAL": 2,
+"POSITION": 1,
+"TEXCOORD_0": 3
+},
+"indices": 0
+},
+{
+"material": 1,
+"mode": 4,
+"attributes": {
+"NORMAL": 6,
+"POSITION": 5,
+"TEXCOORD_0": 7
+},
+"indices": 4
+}
+]
+}
+],
+"nodes": [
+{
+"name": "RootNode",
+"translation": [
+0.0,
+0.0,
+0.0
+],
+"rotation": [
+0.0,
+0.0,
+0.0,
+1.0
+],
+"scale": [
+1.0,
+1.0,
+1.0
+],
+"children": [
+1
+]
+},
+{
+"name": "glasses12.001",
+"translation": [
+0.0,
+0.0,
+0.0
+],
+"rotation": [
+2.1855694143369e-08,
+0.0,
+0.0,
+1.0
+],
+"scale": [
+100.0,
+100.0,
+100.0
+],
+"mesh": 0
+}
+]
+} 

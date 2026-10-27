@@ -1,0 +1,15 @@
+{
+  "triangles": 904,
+  "license": "CC0 1.0",
+  "model": "glasses12.001",
+  "prefab": "Assets/HideAndShoot/Prefabs/VisionPickup.prefab",
+  "networkHashes": [
+    1633530519,
+    1488703392,
+    115825172,
+    1997290761
+  ],
+  "ownerOnlyTimer": true,
+  "sceneSaved": true,
+  "preexistingDirtyScenePreserved": false
+}

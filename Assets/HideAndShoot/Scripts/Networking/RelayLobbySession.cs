@@ -130,6 +130,8 @@ namespace HideAndShoot.Networking
         private int lastRosterCount = -1;
         private PooledNetworkInstanceHandler npcClientPool;
         private PooledNetworkInstanceHandler ammoClientPool;
+        private PooledNetworkInstanceHandler visionClientPool;
+        private GameObject registeredVisionPrefab;
         private GameObject registeredNpcPrefab;
         private GameObject registeredAmmoPrefab;
         private PublicRoomDirectory directory;
@@ -198,6 +200,13 @@ namespace HideAndShoot.Networking
                     registeredAmmoPrefab = catalog.AmmoPickup;
                     ammoClientPool = new PooledNetworkInstanceHandler(catalog.AmmoPickup);
                     manager.PrefabHandler.AddHandler(catalog.AmmoPickup, ammoClientPool);
+                }
+                if (catalog.VisionPickup != null)
+                {
+                    manager.AddNetworkPrefab(catalog.VisionPickup);
+                    registeredVisionPrefab=catalog.VisionPickup;
+                    visionClientPool=new PooledNetworkInstanceHandler(catalog.VisionPickup);
+                    manager.PrefabHandler.AddHandler(catalog.VisionPickup,visionClientPool);
                 }
             }
             else Debug.LogError("[HideAndShoot] NetworkPrefabCatalog missing. Run gameplay scene installer.");
@@ -1082,9 +1091,11 @@ namespace HideAndShoot.Networking
             {
                 if (registeredNpcPrefab != null) manager.PrefabHandler.RemoveHandler(registeredNpcPrefab);
                 if (registeredAmmoPrefab != null) manager.PrefabHandler.RemoveHandler(registeredAmmoPrefab);
+                if (registeredVisionPrefab != null) manager.PrefabHandler.RemoveHandler(registeredVisionPrefab);
             }
             npcClientPool?.Dispose();
             ammoClientPool?.Dispose();
+            visionClientPool?.Dispose();
         }
     }
 }

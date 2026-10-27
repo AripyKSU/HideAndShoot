@@ -19,7 +19,8 @@ namespace HideAndShoot.UI
         private readonly TextMeshProUGUI[] scoreWins=new TextMeshProUGUI[8];
         private readonly TextMeshProUGUI[] scoreKills=new TextMeshProUGUI[8];
         private readonly TextMeshProUGUI[] killFeedLabels=new TextMeshProUGUI[5];
-        private TextMeshProUGUI revealWarning;
+        private TextMeshProUGUI revealWarning,detectionNotice;
+        private HideAndShoot.Player.PlayerDetectionVision cachedOwnerVision;
         private readonly Image[] scoreRows=new Image[8];
         private GameObject reticle;
         private Image reticleDot;
@@ -57,11 +58,12 @@ namespace HideAndShoot.UI
                 scoreRows[i]=row?.GetComponent<Image>();
             }
             revealWarning=PanelText(root,"NpcRevealWarning");
+            detectionNotice=PanelText(root,"DetectionVisionNotice");
             for(int i=0;i<5;i++)killFeedLabels[i]=root.Find("KillFeed/Entry"+i)?.GetComponent<TextMeshProUGUI>();
             if(roundInfo==null || ammo==null || feedback==null || result==null || countdown==null ||
                 scoreboard==null || reticleDot==null || guide==null || Array.Exists(scoreNames,t=>t==null) ||
                 Array.Exists(scoreWins,t=>t==null) || Array.Exists(scoreKills,t=>t==null) ||
-                revealWarning==null || Array.Exists(killFeedLabels,t=>t==null) || Array.Exists(scoreRows,t=>t==null))
+                revealWarning==null || detectionNotice==null || Array.Exists(killFeedLabels,t=>t==null) || Array.Exists(scoreRows,t=>t==null))
             {Debug.LogError("[HideAndShoot/HUD] Incomplete authored compact HUD.");canvas=null;}
         }
         private static TextMeshProUGUI PanelText(Transform root,string panel)=>
@@ -118,6 +120,9 @@ namespace HideAndShoot.UI
             var warning=Label(root,"NpcRevealWarning",new Vector2(.5f,0),new Vector2(.5f,0),new Vector2(0,88),new Vector2(660,44),18,TextAnchor.MiddleCenter,TacticalUI.Gold);
             warning.enableAutoSizing=true;warning.fontSizeMin=13;warning.fontSizeMax=18;
             warning.transform.parent.gameObject.SetActive(false);
+            var detection=Label(root,"DetectionVisionNotice",new Vector2(.5f,0),new Vector2(.5f,0),new Vector2(0,140),new Vector2(660,44),18,TextAnchor.MiddleCenter,new Color(.79f,.58f,1f));
+            detection.enableAutoSizing=true;detection.fontSizeMin=13;detection.fontSizeMax=18;
+            detection.transform.parent.gameObject.SetActive(false);
         }
 #endif
         private void CreateCanvas()
@@ -247,10 +252,10 @@ namespace HideAndShoot.UI
             }
             if(cachedOwnerPistol==null || !cachedOwnerPistol.IsSpawned || Time.unscaledTime>=nextOwnerRefresh)
             {
-                nextOwnerRefresh=Time.unscaledTime+1;cachedOwnerPistol=null;cachedOwnerLife=null;
+                nextOwnerRefresh=Time.unscaledTime+1;cachedOwnerPistol=null;cachedOwnerLife=null;cachedOwnerVision=null;
                 foreach(var player in FindObjectsByType<PistolCombatController>(FindObjectsSortMode.None))
                     if(player.IsSpawned && player.IsOwner)
-                    {cachedOwnerPistol=player;cachedOwnerLife=player.GetComponent<HostPlayerLife>();break;}
+                    {cachedOwnerPistol=player;cachedOwnerLife=player.GetComponent<HostPlayerLife>();cachedOwnerVision=player.GetComponent<HideAndShoot.Player.PlayerDetectionVision>();break;}
             }
             var pistol=cachedOwnerPistol;var life=cachedOwnerLife;
             var motor=pistol!=null?pistol.GetComponent<HideAndShoot.Player.PlayerLocalMotor>():null;
@@ -285,6 +290,10 @@ namespace HideAndShoot.UI
             bool warningVisible=showAmmo && remaining>0d && !boardHeld;
             SetVisible(revealWarning,warningVisible);
             if(warningVisible)revealWarning.text="NPC를 잘못 사격했습니다. "+Math.Ceiling(remaining)+"초 동안 모습이 노출됩니다.";
+            double detectionRemaining=cachedOwnerVision!=null?cachedOwnerVision.SecondsRemaining:0d;
+            bool detectionVisible=showAmmo && detectionRemaining>0d && !boardHeld;
+            SetVisible(detectionNotice,detectionVisible);
+            if(detectionVisible)detectionNotice.text=Math.Ceiling(detectionRemaining)+"초 동안 다른 플레이어의 위치가 보입니다.";
             int feedIndex=0;
             for(int i=session.KillFeed.Count-1;i>=0 && feedIndex<5;i--)
             {

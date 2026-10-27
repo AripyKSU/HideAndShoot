@@ -13,6 +13,8 @@ namespace HideAndShoot.UI
         private GameObject stage;
         private Camera podiumCamera;
         private Canvas overlay;
+        private RectTransform backdrop;
+        private float backdropAspect;
         private Material stageMaterial;
         private readonly List<Material> materials=new List<Material>();
         private readonly float[] podiumX={0,-3,3};
@@ -45,6 +47,36 @@ namespace HideAndShoot.UI
             return block;
         }
 
+        private void CreateBackdrop()
+        {
+            var texture=Resources.Load<Texture2D>("PodiumArenaBackground");
+            if(texture==null){Debug.LogError("[HideAndShoot/Podium] Missing arena background.");return;}
+            var background=new GameObject("ArenaBackground",typeof(RectTransform),typeof(Canvas),typeof(RawImage));
+            background.transform.SetParent(podiumCamera.transform,false);
+            background.layer=5;
+            backdrop=background.GetComponent<RectTransform>();
+            backdrop.localPosition=new Vector3(0,0,50);
+            backdrop.localRotation=Quaternion.identity;
+            backdrop.localScale=Vector3.one;
+            var canvas=background.GetComponent<Canvas>();
+            canvas.renderMode=RenderMode.WorldSpace;
+            canvas.worldCamera=podiumCamera;
+            canvas.sortingOrder=-100;
+            var image=background.GetComponent<RawImage>();
+            image.texture=texture;
+            image.raycastTarget=false;
+            backdropAspect=(float)texture.width/texture.height;
+            LateUpdate();
+        }
+
+        private void LateUpdate()
+        {
+            if(backdrop==null || podiumCamera==null)return;
+            // Cover the camera view with the original proportions, cropping only the excess.
+            float height=2*50*Mathf.Tan(podiumCamera.fieldOfView*.5f*Mathf.Deg2Rad);
+            height*=Mathf.Max(1,podiumCamera.aspect/backdropAspect);
+            backdrop.sizeDelta=new Vector2(height*backdropAspect,height);
+        }
         public void ShowPodium(RelayLobbySession.ScoreRow[] standings)
         {
             if(stage!=null || standings==null || standings.Length==0)return;
@@ -99,6 +131,7 @@ namespace HideAndShoot.UI
             podiumCamera.depth=100;podiumCamera.clearFlags=CameraClearFlags.SolidColor;
             podiumCamera.backgroundColor=TacticalUI.Ink;podiumCamera.cullingMask=1<<5;
             podiumCamera.fieldOfView=47;podiumCamera.nearClipPlane=.1f;podiumCamera.farClipPlane=60;
+            CreateBackdrop();
             var lightObj=new GameObject("PodiumKeyLight");
             lightObj.transform.SetParent(stage.transform,false);
             lightObj.transform.localRotation=Quaternion.Euler(40,310,0);

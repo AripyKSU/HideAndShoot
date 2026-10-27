@@ -11,5 +11,6 @@ namespace HideAndShoot.World
         public GameObject PlayerAvatar;
         public GameObject NPCActor;
         public GameObject AmmoPickup;
+        public GameObject VisionPickup;
     }
 }

@@ -92,7 +92,7 @@ namespace HideAndShoot.World
         }
 
         /// <summary>Reassign unique ground spawns and admit late joiners at the next round only.</summary>
-        public bool PrepareRoundSpawns(int roundId)
+        public bool PrepareRoundSpawns(int roundId,IReadOnlyCollection<ulong> admittedParticipants=null)
         {
             if(network==null || !network.IsServer || !initialSpawnsCompleted ||
                spawnPoints==null || roundId<1)return false;
@@ -100,7 +100,8 @@ namespace HideAndShoot.World
             var catalog=Resources.Load<NetworkPrefabCatalog>("NetworkPrefabCatalog");
             if(session==null || catalog==null || catalog.PlayerAvatar==null)return false;
             var ids=session.GetParticipantIds()
-                .Where(id=>network.ConnectedClientsIds.Contains(id)).ToArray();
+                .Where(id=>network.ConnectedClientsIds.Contains(id) &&
+                    (admittedParticipants==null || admittedParticipants.Contains(id))).ToArray();
             if(ids.Length<2 || ids.Length>8 ||
                !spawnPoints.TryDrawPlayerSpawns(ids.Length,
                    unchecked(System.Environment.TickCount+roundId*137),

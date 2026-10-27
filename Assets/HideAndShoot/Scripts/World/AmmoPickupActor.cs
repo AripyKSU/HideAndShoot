@@ -17,8 +17,8 @@ namespace HideAndShoot.World
         private int generation=-1;
         private int candidateIndex=-1;
         private bool claimed;
-        private Light pickupLight;
         private Transform visual;
+        private Transform glowShell;
         private Vector3 visualHome;
         private Quaternion visualRotation;
         private bool visualPrepared;
@@ -31,18 +31,9 @@ namespace HideAndShoot.World
 
         public override void OnNetworkSpawn()
         {
-            // A readable cyan glow distinguishes the small ammo box from
-            // props, even across the raised two-level arena.
-            if(pickupLight==null)
-            {
-                pickupLight=gameObject.AddComponent<Light>();
-                pickupLight.type=LightType.Point;
-                pickupLight.range=3.2f;
-                pickupLight.intensity=1.7f;
-                pickupLight.color=new Color(.27f,.92f,1f);
-            }
-            pickupLight.enabled=true;
+            // Keep the ammo palette intact; its separate transparent shell owns the glow.
             PrepareVisual();
+            if(glowShell!=null){glowShell.gameObject.SetActive(true);glowShell.localPosition=Vector3.zero;}
             visual.gameObject.SetActive(true);
             visual.localPosition=visualHome;
             visual.localRotation=visualRotation;
@@ -73,12 +64,13 @@ namespace HideAndShoot.World
             int layer=LayerMask.NameToLayer("AmmoPickup");
             foreach(var item in visual.GetComponentsInChildren<Transform>(true))
                 if(layer>=0)item.gameObject.layer=layer;
+            glowShell=transform.Find("PickupGlowShell");
             visualPrepared=true;
         }
 
         public override void OnNetworkDespawn()
         {
-            if(pickupLight!=null)pickupLight.enabled=false;
+            if(glowShell!=null){glowShell.gameObject.SetActive(false);glowShell.localPosition=Vector3.zero;}
             if(visual!=null)visual.localPosition=visualHome;
             if(visual!=null)visual.localRotation=visualRotation;
         }
@@ -89,6 +81,7 @@ namespace HideAndShoot.World
             visual.localPosition=visualHome+Vector3.up*
                 (Mathf.Sin(Time.time*3f)*.1f);
             visual.Rotate(Vector3.up,Time.deltaTime*30f,Space.World);
+            if(glowShell!=null)glowShell.localPosition=Vector3.up*(Mathf.Sin(Time.time*3f)*.1f);
         }
 
         public void PrepareServer(int round,int newGeneration,int positionIndex,AmmoSpawnDirector owner)

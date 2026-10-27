@@ -250,6 +250,7 @@ GameObject:
   - component: {fileID: 731712498290102674}
   - component: {fileID: 6676016387313255335}
   - component: {fileID: 3460347059813032890}
+  - component: {fileID: 7330389013675596626}
   m_Layer: 0
   m_Name: PlayerAvatar
   m_TagString: Untagged
@@ -545,6 +546,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7330389013675596626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4424803096635767899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82432d9ccda1e6e44812f19bfcf233f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HideAndShoot.Player.PlayerDetectionVision
+  ShowTopMostFoldoutHeaderGroup: 1
 --- !u!1 &4698090720188285234
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,17 +10,24 @@ namespace HideAndShoot.World
     {
         private readonly List<WorldAnchor> playerSpawns = new List<WorldAnchor>();
         private readonly List<WorldAnchor> ammoCandidates = new List<WorldAnchor>();
+        private Transform source;
 
         public int PlayerSpawnCount => playerSpawns.Count;
         public int AmmoCandidateCount => ammoCandidates.Count;
 
         private void Awake() => Refresh();
 
+        public void UseSource(Transform anchors)
+        {
+            source = anchors;
+            Refresh();
+        }
+
         public void Refresh()
         {
             playerSpawns.Clear();
             ammoCandidates.Clear();
-            foreach (var anchor in GetComponentsInChildren<WorldAnchor>(true))
+            foreach (var anchor in (source != null ? source : transform).GetComponentsInChildren<WorldAnchor>(true))
             {
                 if (anchor.Kind == WorldAnchor.AnchorKind.PlayerSpawn)
                     playerSpawns.Add(anchor);

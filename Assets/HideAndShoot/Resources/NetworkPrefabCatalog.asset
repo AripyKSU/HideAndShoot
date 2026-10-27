@@ -15,3 +15,4 @@ MonoBehaviour:
   PlayerAvatar: {fileID: 4424803096635767899, guid: 760c380eaee808c48aedfcd6b6bd4449, type: 3}
   NPCActor: {fileID: 1384208290217503161, guid: 36ab9285723d2ee42af435cc94e5e4fd, type: 3}
   AmmoPickup: {fileID: 1952819531806345602, guid: 1e9d6d33ceb7a1f4aa84b11b228571ef, type: 3}
+  VisionPickup: {fileID: 2547085840482646236, guid: c47d6a08a6e175b43b4c70c1bd264fc3, type: 3}

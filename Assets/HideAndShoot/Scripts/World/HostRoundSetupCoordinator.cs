@@ -21,6 +21,7 @@ namespace HideAndShoot.World
         private MatchAvatarBootstrap avatars;
         private NpcPoolCoordinator npcPool;
         private AmmoSpawnDirector ammo;
+        private VisionSpawnDirector vision;
         private NetworkManager network;
         private int roundId;
         private int participantsAtStart;
@@ -47,6 +48,7 @@ namespace HideAndShoot.World
             avatars=GetComponent<MatchAvatarBootstrap>();
             npcPool=GetComponent<NpcPoolCoordinator>();
             ammo=GetComponent<AmmoSpawnDirector>();
+            vision=GetComponent<VisionSpawnDirector>();
             deaths=GetComponent<HostDeathResolver>();
             if(deaths!=null)deaths.WinnerCommitted+=OnWinnerCommitted;
             setupCoroutine=StartCoroutine(WaitThenBegin());
@@ -86,13 +88,51 @@ namespace HideAndShoot.World
             phase=HostPhase.Setup;
             PublishVoteStatus();
             ammo.EndRound();
+            vision?.EndRound();
+            npcPool.ReleaseWholeRound();
+            foreach(var pistol in FindObjectsByType<PistolCombatController>(FindObjectsSortMode.None))
+                pistol.HostSetRound(roundId,false);
+            room.PublishMatchState();
+            var maps=GetComponent<StageMapDirector>();
+            if(maps==null || !maps.HostChooseForStage(roundId))
+            {
+                phase=HostPhase.Stopped;
+                Debug.LogError("[HideAndShoot/Map] Cannot prepare one of the three stage maps.");
+                return false;
+            }
+            setupCoroutine=StartCoroutine(PrepareSelectedMap(roundId,room,maps));
+            return true;
+        }
+
+        private IEnumerator PrepareSelectedMap(int preparingRound,RelayLobbySession room,StageMapDirector maps)
+        {
+            float deadline=Time.realtimeSinceStartup+30f;
+            while(!maps.ParticipantsReady(roundParticipants) && Time.realtimeSinceStartup<deadline)
+            {
+                if(network==null || !network.IsServer || phase!=HostPhase.Setup || roundId!=preparingRound)
+                    yield break;
+                yield return null;
+            }
+            if(!maps.ParticipantsReady(roundParticipants))
+            {
+                phase=HostPhase.Stopped;
+                Debug.LogError("[HideAndShoot/Map] Stage preparation timed out; returning to lobby without activating.");
+                room.HostReturnToLobby();
+                yield break;
+            }
+            if(roundParticipants.Count(id=>network.ConnectedClientsIds.Contains(id))<2)
+            {
+                phase=HostPhase.Stopped;
+                room.HostReturnToLobby();
+                yield break;
+            }
             var history=GetComponent<HostShotHistory>();
             history?.BeginNewRound();
-            if(!avatars.PrepareRoundSpawns(roundId))
+            if(!avatars.PrepareRoundSpawns(roundId,roundParticipants))
             {
                 phase=HostPhase.Stopped;
                 Debug.LogError("[HideAndShoot/Round] Cannot assign player round spawns.");
-                return false;
+                yield break;
             }
             foreach(var life in FindObjectsByType<HostPlayerLife>(FindObjectsSortMode.None))
                 if(life.IsSpawned)
@@ -108,7 +148,7 @@ namespace HideAndShoot.World
             {
                 phase=HostPhase.Stopped;
                 Debug.LogError("[HideAndShoot/Round] NPC population setup failed. Round will not activate.");
-                return false;
+                yield break;
             }
 
             phase=HostPhase.Countdown;
@@ -117,7 +157,6 @@ namespace HideAndShoot.World
             StartCoroutine(CountdownThenActivate(roundId));
             Debug.Log("[HideAndShoot/Round] Countdown 5s. Participants="+participantsAtStart+
                 " NPCs="+npcPool.SpawnedCount+" pickups=0");
-            return true;
         }
 
         private IEnumerator CountdownThenActivate(int startedRound)
@@ -130,6 +169,12 @@ namespace HideAndShoot.World
             {
                 phase=HostPhase.Stopped;
                 Debug.LogError("[HideAndShoot/Round] Ammo system failed to initialize.");
+                yield break;
+            }
+            if(vision==null || !vision.BeginRound(roundId))
+            {
+                ammo.EndRound();phase=HostPhase.Stopped;
+                Debug.LogError("[HideAndShoot/Round] Detection item failed to initialize.");
                 yield break;
             }
             foreach(var pistol in FindObjectsByType<PistolCombatController>(FindObjectsSortMode.None))
@@ -245,6 +290,7 @@ namespace HideAndShoot.World
             foreach(var life in FindObjectsByType<HostPlayerLife>(FindObjectsSortMode.None))
                 if(life.IsSpawned)life.HostClearReveal();
             ammo?.EndRound();
+            vision?.EndRound();
             npcPool?.FreezeMovement();
             foreach(var pistol in FindObjectsByType<PistolCombatController>(FindObjectsSortMode.None))
             {
@@ -263,6 +309,7 @@ namespace HideAndShoot.World
             if(network!=null && network.IsServer)
             {
                 ammo?.EndRound();
+            vision?.EndRound();
                 npcPool?.ReleaseWholeRound();
             }
         }

@@ -48,6 +48,10 @@ namespace HideAndShoot.World
                 services.AddComponent<NpcZonePopulation>();
             if(services.GetComponent<NpcPoolCoordinator>()==null)
                 services.AddComponent<NpcPoolCoordinator>();
+            if(services.GetComponent<PickupGlowPresentation>()==null)
+                services.AddComponent<PickupGlowPresentation>();
+            if(services.GetComponent<VisionSpawnDirector>()==null)
+                services.AddComponent<VisionSpawnDirector>();
             if(services.GetComponent<AmmoSpawnDirector>()==null)
                 services.AddComponent<AmmoSpawnDirector>();
             if(services.GetComponent<MatchAvatarBootstrap>()==null)

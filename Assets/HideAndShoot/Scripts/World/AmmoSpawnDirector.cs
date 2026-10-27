@@ -23,6 +23,7 @@ namespace HideAndShoot.World
         private readonly List<AmmoPickupActor> cleanup=new List<AmmoPickupActor>();
 
         private NetworkManager network;
+        private VisionSpawnDirector vision;
         private GameObject prefab;
         private Transform[] candidates=Array.Empty<Transform>();
         private System.Random random;
@@ -33,6 +34,7 @@ namespace HideAndShoot.World
         private int generation;
         private bool activeRound;
 
+        public bool IsCandidateOccupied(int index)=>occupiedCandidates.Contains(index);
         public int ActiveCount=>active.Count;
         public int MaximumActive=>cap;
         public int AttemptCount=>Mathf.Max(0,nextAttemptIndex-1);
@@ -41,6 +43,7 @@ namespace HideAndShoot.World
         private bool Ready()
         {
             network=NetworkManager.Singleton;
+            vision=GetComponent<VisionSpawnDirector>();
             if(network==null || !network.IsServer) return false;
             if(anchorRegistry==null)
                 anchorRegistry=FindFirstObjectByType<SpawnPointRegistry>();
@@ -102,7 +105,8 @@ namespace HideAndShoot.World
         {
             var possible=new List<int>(candidates.Length);
             for(int i=0;i<candidates.Length;i++)
-                if(candidates[i]!=null && !occupiedCandidates.Contains(i)) possible.Add(i);
+                if(candidates[i]!=null && !occupiedCandidates.Contains(i) &&
+                   (vision==null || !vision.IsCandidateOccupied(i))) possible.Add(i);
             if(possible.Count==0)
             {
                 Debug.LogWarning("[HideAndShoot/Ammo] No free candidates at +"+

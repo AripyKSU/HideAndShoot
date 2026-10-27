@@ -1,0 +1,243 @@
+{
+  "passed": true,
+  "maps": [
+    {
+      "map": 0,
+      "participants": 2,
+      "npcs": 30,
+      "target": 30,
+      "moved": 29,
+      "offMesh": 0,
+      "spawnPositions": [
+        [
+          0.0,
+          0.2,
+          24.0
+        ],
+        [
+          -24.0,
+          0.2,
+          -24.0
+        ]
+      ],
+      "walk": {
+        "tested": 0,
+        "failures": []
+      }
+    },
+    {
+      "map": 0,
+      "participants": 8,
+      "npcs": 72,
+      "target": 72,
+      "moved": 72,
+      "offMesh": 0,
+      "spawnPositions": [
+        [
+          -24.0,
+          0.2,
+          0.0
+        ],
+        [
+          -24.0,
+          0.2,
+          24.0
+        ],
+        [
+          24.0,
+          0.2,
+          0.0
+        ],
+        [
+          -24.0,
+          0.2,
+          -24.0
+        ],
+        [
+          0.0,
+          0.2,
+          0.0
+        ],
+        [
+          0.0,
+          0.2,
+          -24.0
+        ],
+        [
+          24.0,
+          0.2,
+          24.0
+        ],
+        [
+          0.0,
+          0.2,
+          24.0
+        ]
+      ],
+      "walk": null
+    },
+    {
+      "map": 1,
+      "participants": 2,
+      "npcs": 30,
+      "target": 30,
+      "moved": 27,
+      "offMesh": 0,
+      "spawnPositions": [
+        [
+          24.0,
+          0.2,
+          -24.0
+        ],
+        [
+          -24.0,
+          0.2,
+          -24.0
+        ]
+      ],
+      "walk": {
+        "tested": 12,
+        "failures": []
+      }
+    },
+    {
+      "map": 1,
+      "participants": 8,
+      "npcs": 72,
+      "target": 72,
+      "moved": 62,
+      "offMesh": 0,
+      "spawnPositions": [
+        [
+          -24.0,
+          0.2,
+          6.0
+        ],
+        [
+          0.0,
+          0.2,
+          -18.0
+        ],
+        [
+          24.0,
+          0.2,
+          -6.0
+        ],
+        [
+          -13.0,
+          0.2,
+          -6.0
+        ],
+        [
+          24.0,
+          0.2,
+          -24.0
+        ],
+        [
+          -24.0,
+          0.2,
+          -24.0
+        ],
+        [
+          24.0,
+          0.2,
+          24.0
+        ],
+        [
+          -24.0,
+          0.2,
+          24.0
+        ]
+      ],
+      "walk": null
+    },
+    {
+      "map": 2,
+      "participants": 2,
+      "npcs": 30,
+      "target": 30,
+      "moved": 30,
+      "offMesh": 0,
+      "spawnPositions": [
+        [
+          -26.0,
+          0.2,
+          -26.0
+        ],
+        [
+          -28.0,
+          0.2,
+          -4.0
+        ]
+      ],
+      "walk": {
+        "tested": 12,
+        "failures": []
+      }
+    },
+    {
+      "map": 2,
+      "participants": 8,
+      "npcs": 72,
+      "target": 72,
+      "moved": 67,
+      "offMesh": 0,
+      "spawnPositions": [
+        [
+          28.0,
+          0.2,
+          17.0
+        ],
+        [
+          -3.0,
+          0.2,
+          16.0
+        ],
+        [
+          28.0,
+          0.2,
+          -8.0
+        ],
+        [
+          -14.0,
+          0.2,
+          -8.0
+        ],
+        [
+          29.0,
+          0.2,
+          -26.0
+        ],
+        [
+          -28.0,
+          0.2,
+          25.0
+        ],
+        [
+          -28.0,
+          0.2,
+          -4.0
+        ],
+        [
+          0.0,
+          0.2,
+          -16.0
+        ]
+      ],
+      "walk": null
+    }
+  ],
+  "seen": [
+    0,
+    1,
+    2
+  ],
+  "sameStageCannotReroll": true,
+  "rampsClear": true,
+  "initiallyEmpty": true,
+  "ammo": 2,
+  "vision": 1,
+  "embeddedPickups": 0,
+  "runtimeErrors": [],
+  "scope": "Local NGO host; 2/8 participant population settings, real CharacterController ramp walks and timed pickups. External client handshake is not exercised."
+}

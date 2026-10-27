@@ -1,0 +1,26 @@
+{
+  "ammoTexturePreserved": true,
+  "transparentShell": true,
+  "shellCollider": false,
+  "collection": true,
+  "ammoBefore": 5,
+  "ammoAfter": 10,
+  "shellHiddenOnDespawn": true,
+  "shellRestoredOnReuse": true,
+  "inspection": {
+    "shaderErrors": [],
+    "pickupCount": 2,
+    "pointLights": 0,
+    "materials": [
+      "Universal Render Pipeline/Lit",
+      "HideAndShoot/Items/PickupBubble"
+    ],
+    "post": true,
+    "hdr": true,
+    "bloom": "Pickup glow (runtime)"
+  },
+  "captures": [
+    "AgentReports/AmmoBubble_2026-10-16/AmmoBubble_Gameplay.png",
+    "AgentReports/AmmoBubble_2026-10-16/AmmoBubble_Close.png"
+  ]
+}

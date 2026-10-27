@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "roads": 60,
+  "groundRoads": 24,
+  "elevatedRoads": 36,
+  "roadSurfaceChecks": 291,
+  "intentionalObstacleSamples": 9,
+  "ramps": 6,
+  "bidirectionalRampPaths": 12,
+  "anchorChecks": 25,
+  "roofLeaks": 0,
+  "errors": []
+}
